@@ -37,7 +37,7 @@ p {
 }
 
 a:active {
-    color:orange;
+    color: #58377d;
     font-family:cursive;
 }
 
@@ -54,15 +54,11 @@ a:link, a:visited {
     font-style: italic;
 }
 
-.Table {
-    display: table;
-}
-
 .Row {
     display: table-row;
 }
 
-.Cell {
+div {
     display: table-cell;
     border: solid;
     border-width: thin;
