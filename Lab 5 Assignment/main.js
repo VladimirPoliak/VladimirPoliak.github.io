@@ -39,7 +39,7 @@ function mouseOver(id) {
     var mousedElement = document.getElementById(id);
     mousedElement.style.color = "blue";
     mousedElement.style.backgroundColor = "green";
-    mousedElement.style.fontSize = "30px";
+    mousedElement.style.fontSize = "25px";
 }
 
 /* This function takes the ident variable and defaults multiple styles when the mouse is no longer hovered over it, 
