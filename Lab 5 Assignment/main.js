@@ -36,7 +36,6 @@ function dropDownFunciton() {
 
 /* When clicking anywhere on the website besides the menu button, the event is detected as not pressing the menu button, so the
 content is grabbed in a variable and then it remvoes the "show" condition from all of the variables in the menu making them disappear.*/
-
 window.onclick = function(event) {
     if (!event.target.matches('.menuButton')) {
         var menuContent = document.getElementsByClassName("content");
