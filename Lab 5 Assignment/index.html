@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <title>Vladimir Poliak Lab 3 Assignment</title>
+    <!-- This assign the style.css sheet and main.js program file to this HTML website.-->
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <meta charset="utf-8">
@@ -12,6 +13,8 @@
 <body>
 <h1>Vladimir Poliak's Website For ITM780 Lab 3</h1>
 <hr>
+<!-- This div tag is used to create a navigation bar with 5 elements, 3 of them linking to various pages of website and 2 of them leading to external pages.
+ Additionally, it provides functionality where the buttons highlight upon being moused over and go back to normal after no longer being moused over.-->
 <div class="navbar">
     <button onclick="dropDownFunciton()">Dropdown</button>
     <div id="menu" class="content">
@@ -23,13 +26,16 @@
     </div>    
 </div>
 <br>
+<!-- This code shows a picture that can enlarge upon being clicked on.-->
 <p id="pictureText">This is a Picture of Myself</p>
 <img id="selfPicture" src="images/Picture.jpg" onclick="enlarge()" alt="This is a picture of what I look like">
 <hr>
+<!-- This code provides a button that prompts the user to enter their name before displaying it on the page below the title.-->
 <button id="buttonElement" onclick="nameButton()">Please Click Here and Type in Your Name</button>
 <h1 id="nameChange"></h1>
 <hr>
 <h2>Educational Experience</h2>
+<!-- This creates an unorderd list of educational experience.-->
 <ul>
     <li>
         Bachelor of Commmerce - Business Technology Management Co-op, Toronto Metropolitan University (Formerrly Ryerson University)
@@ -44,6 +50,7 @@
 </ul>
 <hr>
 <h2>Program Description</h2>
+<!-- This creates a paragraph with a button at the end of it that is on the right side of the screen.-->
 <p>
     The Business Technology management program focuses on preparing students to identify business needs, design technological solutions and communicate them effectively. (TorontoMU, n.d.)
     <br>
@@ -52,6 +59,7 @@
 </p>
 <hr>
 <h3>Most Useful Course</h3>
+<!-- This creates a paragraph with a button in the middle of it.-->
 <p>
     Despite it being difficult to choose a course which is most useful, I think the one that will benefit me the most for my desired future career path is
     <a href="https://www.torontomu.ca/information-technology-management/course-outlines/ITM301.pdf">ITM 301</a>.
