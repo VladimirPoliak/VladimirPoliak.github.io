@@ -1,6 +1,5 @@
 /* This function prompts the user for their name and records it in the "name" variable 
 before running the textChange function and passing the name variable and then running the elementChange function. */
-
 function nameButton() {
     var name  = prompt("Hello, please enter your name:");
     textChange(name);
@@ -40,7 +39,7 @@ function mouseOver(id) {
     var mousedElement = document.getElementById(id);
     mousedElement.style.color = "blue";
     mousedElement.style.backgroundColor = "green";
-    mousedElement.style.fontSize = "50px";
+    mousedElement.style.fontSize = "30px";
 }
 
 /* This function takes the ident variable and defaults multiple styles when the mouse is no longer hovered over it, 
