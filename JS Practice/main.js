@@ -50,3 +50,7 @@ function textChange(name) { // this initializes the fucntion called textChange w
     nameElement.innerHTML = "Hello there  " + name; // this changes the text in the nameElement elementS
 }
 
+function nameButton() {
+    var name  = prompt("Hello, please enter your name:"); // this prompts the user for their name and assigns it to the name variable
+    alert("Hello there, " + name); // this returns a box with the users name
+}
