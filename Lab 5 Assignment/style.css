@@ -91,7 +91,6 @@ div {
 .content {
     display: none;
     position: absolute;
-    float: right;
     background-color: #69b6b3;
 }
 
