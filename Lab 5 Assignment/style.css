@@ -85,15 +85,14 @@ div {
 .navbar {
     float: right;
     position: relative;
-    border: #d1d0a9;
-    min-width: 300px;
+    border: none;
 }
 
 .content {
     display: none;
     position: absolute;
+    float: right;
     background-color: #69b6b3;
-    min-width: 150px;
 }
 
 .content a {

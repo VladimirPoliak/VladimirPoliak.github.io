@@ -34,6 +34,21 @@ function dropDownFunciton() {
     document.getElementById("menu").classList.toggle("show");
 }
 
+/* When clicking anywhere on the website besides the menu button, the event is detected as not pressing the menu button, so the
+content is grabbed in a variable and then it remvoes the "show" condition from all of the variables in the menu making them disappear.*/
+
+window.onclick = function(event) {
+    if (!event.target.matches('.menuButton')) {
+        var menuContent = document.getElementsByClassName("content");
+        for (var i = 0; i <= menuContent.length; i++) {
+            var openMenu=menuContent[i];
+            if (openMenu.classList.contains('show')) {
+                openMenu.classList.remove('show');
+            }
+        } 
+    }
+}
+
 /* This function takes the ident variable and assigns multiple styles when the mouse is hovered over it, 
 the id of each menu item is passed to the ident variable. */
 function mouseOver(id) {

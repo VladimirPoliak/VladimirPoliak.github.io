@@ -13,17 +13,26 @@
 <body>
 <h1>Awards and Achievements</h1>
 <hr>
-<!-- This div tag is used to create a navigation bar with 5 elements, 3 of them linking to various pages of website and 2 of them leading to external pages.
- Additionally, it provides functionality where the buttons highlight upon being moused over and go back to normal after no longer being moused over.-->
+ <!-- These div tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
+  the "Contact Menu" offers a drop down button for accssing contact external websites. Additionally, upon being moused over, the links highlight and lose their
+  highlight after no longer being moused over and the "Contact menu" opens. After clicking anywhere else on screen the "Conctact Menu" closes.-->
 <div class="navbar">
-    <button onclick="dropDownFunciton()">Dropdown</button>
-    <div id="menu" class="content">
+    <div>
+        <button class="menuButton" onmouseover="dropDownFunciton()">Contact Menu</button>
+        <div id="menu" class="content">
+            <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="github" href="https://github.com/VladimirPoliak/VladimirPoliak.github.io">GitHub Contact</a>
+            <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="linkedin" href="https://linkedin.com/in/vladimir-p-b315331aa/">LinkedIn Contact</a>
+        </div>
+    </div>
+    <div>   
         <a onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" id="home" href="index.html">Home</a>
+    </div> 
+    <div>
         <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="awards" href="awards_achivements.html">Awards/Achievements</a>
+    </div>
+    <div>
         <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="courses" href="courses.html">Courses</a>
-        <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="github" href="https://github.com/VladimirPoliak/VladimirPoliak.github.io">GitHub Contact</a>
-        <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="linkedin" href="https://linkedin.com/in/vladimir-p-b315331aa/">LinkedIn Contact</a>
-    </div>    
+    </div>
 </div>
 <br>
 <h2>Educational Awards</h2>
