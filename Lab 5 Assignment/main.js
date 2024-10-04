@@ -1,9 +1,10 @@
 /* This function prompts the user for their name and records it in the "name" variable 
 before running the textChange function and passing the name variable and then running the elementChange function. */
 function nameButton() {
-    var name  = prompt("Hello, please enter your name:");
+    var name = prompt("Hello, please enter your name:");
     textChange(name);
     elementChange();
+    return name
 }
 
 /* This function takes the name variable as a paramater, gets the name element before 
@@ -28,7 +29,7 @@ function enlarge() {
     pictureChange.style.width = "10%";
     pictureChange.style.height = "10%";
 }
- /* This function toggles the menu to show its buttons. */
+ // This function toggles the menu to show its buttons.
 function dropDownFunciton() {
     document.getElementById("menu").classList.toggle("show");
 }
