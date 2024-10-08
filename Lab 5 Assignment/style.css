@@ -52,7 +52,7 @@ a:hover {
 a:active {
     color: #ff0000;
     background-color: orange;
-    font-family:cursive;
+    font-family: cursive;
     font-style: italic;
     border-radius: 40px;
 }
@@ -69,6 +69,7 @@ div {
     padding-right: 20px;
 }
 
+/* Defines style for the pipcture. */
 #selfPicture {
     width: 5%;
     height: 5%;
@@ -77,27 +78,32 @@ div {
     margin-left: auto;
 }
 
+/* Defins style for the text above the picture. */
 #pictureText {
     padding: #d1d0a9;
     text-align: center;
 }
 
+/* Defines positioning for navigation bar.*/
 .navbar {
     float: right;
     position: relative;
     border: none;
 }
 
+/* Defines positioning and style for drop down menu.*/
 .content {
     display: none;
     position: absolute;
     background-color: #69b6b3;
 }
 
+/* Vertically shows dropdown menu links. */
 .content a {
     display: block;
 }
 
+/* Makes dropdown menu visible.*/
 .show {
     display: block;
 }

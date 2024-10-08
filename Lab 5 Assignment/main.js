@@ -29,13 +29,14 @@ function enlarge() {
     pictureChange.style.width = "10%";
     pictureChange.style.height = "10%";
 }
- // This function toggles the menu to show its buttons.
+ // This function toggles the menu to show its content when the button is pushed.
 function dropDownFunciton() {
     document.getElementById("menu").classList.toggle("show");
 }
 
 /* When clicking anywhere on the website besides the menu button, the event is detected as not pressing the menu button, so the
-content is grabbed in a variable and then it remvoes the "show" condition from all of the variables in the menu making them disappear.*/
+content is grabbed in a variable and then it remvoes the "show" condition from all of the variables in the menu making them disappear.
+Followed ITM780 Lab 5 Instructions to achive.*/
 window.onclick = function(event) {
     if (!event.target.matches('.menuButton')) {
         var menuContent = document.getElementsByClassName("content");
@@ -50,17 +51,18 @@ window.onclick = function(event) {
 
 /* This function takes the ident variable and assigns multiple styles when the mouse is hovered over it, 
 the id of each menu item is passed to the ident variable. */
-function mouseOver(id) {
-    var mousedElement = document.getElementById(id);
+function mouseOver(ident) {
+    var mousedElement = document.getElementById(ident);
     mousedElement.style.color = "blue";
     mousedElement.style.backgroundColor = "green";
-    mousedElement.style.fontSize = "25px";
+    mousedElement.style.fontFamily = "Times New Roman";
+    mousedElement.style.fontSize = "30px";
 }
 
 /* This function takes the ident variable and defaults multiple styles when the mouse is no longer hovered over it, 
 the id of each menu item is passed to the ident variable. */
-function mouseOut(id) {
-    var unMousedElement = document.getElementById(id);
+function mouseOut(ident) {
+    var unMousedElement = document.getElementById(ident);
     unMousedElement.style.color = null;
     unMousedElement.style.backgroundColor = null;
     unMousedElement.style.fontSize = null;

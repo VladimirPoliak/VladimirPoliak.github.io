@@ -9,16 +9,15 @@
     <meta charset="utf-8">
 </head>
 
-
 <body>
 <h1>Vladimir Poliak's Website For ITM780 Lab 3</h1>
 <hr>
  <!-- These div tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
   the "Contact Menu" offers a drop down button for accssing contact external websites. Additionally, upon being moused over, the links highlight and lose their
-  highlight after no longer being moused over and the "Contact menu" opens. After clicking anywhere else on screen the "Conctact Menu" closes.-->
+  highlight after no longer being moused over and the "Contact menu" opens when clicked. After clicking anywhere else on screen the "Conctact Menu" closes.-->
 <div class="navbar">
     <div>
-        <button class="menuButton" onmouseover="dropDownFunciton()">Contact Menu</button>
+        <button class="menuButton" onclick="dropDownFunciton()">Contact Menu</button>
         <div id="menu" class="content">
             <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="github" href="https://github.com/VladimirPoliak/VladimirPoliak.github.io">GitHub Contact</a>
             <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="linkedin" href="https://linkedin.com/in/vladimir-p-b315331aa/">LinkedIn Contact</a>
@@ -59,7 +58,7 @@
 </ul>
 <hr>
 <h2>Program Description</h2>
-<!-- This creates a paragraph with a button at the end of it that is on the right side of the screen.-->
+<!-- This creates a paragraph with a link at the end of it that is on the right side of the screen.-->
 <p>
     The Business Technology management program focuses on preparing students to identify business needs, design technological solutions and communicate them effectively. (TorontoMU, n.d.)
     <br>
@@ -68,7 +67,7 @@
 </p>
 <hr>
 <h3>Most Useful Course</h3>
-<!-- This creates a paragraph with a button in the middle of it.-->
+<!-- This creates a paragraph with a link in the middle of it.-->
 <p>
     Despite it being difficult to choose a course which is most useful, I think the one that will benefit me the most for my desired future career path is
     <a href="https://www.torontomu.ca/information-technology-management/course-outlines/ITM301.pdf">ITM 301</a>.
