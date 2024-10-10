@@ -35,7 +35,7 @@ function dropDownFunciton() {
 }
 
 /* When clicking anywhere on the website besides the menu button, the event is detected as not pressing the menu button, so the
-content is grabbed in a variable and then it remvoes the "show" condition from all of the variables in the menu making them disappear.
+content is grabbed in a variable and then it toggles the "show" condition from all of the variables in the menu making them disappear.
 Followed ITM780 Lab 5 Instructions to achive.*/
 window.onclick = function(event) {
     if (!event.target.matches('.menuButton')) {
@@ -43,7 +43,7 @@ window.onclick = function(event) {
         for (var i = 0; i <= menuContent.length; i++) {
             var openMenu=menuContent[i];
             if (openMenu.classList.contains('show')) {
-                openMenu.classList.remove('show');
+                openMenu.classList.toggle('show');
             }
         } 
     }
@@ -56,7 +56,7 @@ function mouseOver(ident) {
     mousedElement.style.color = "blue";
     mousedElement.style.backgroundColor = "green";
     mousedElement.style.fontFamily = "Times New Roman";
-    mousedElement.style.fontSize = "30px";
+    mousedElement.style.fontSize = "37px";
 }
 
 /* This function takes the ident variable and defaults multiple styles when the mouse is no longer hovered over it, 
@@ -65,5 +65,6 @@ function mouseOut(ident) {
     var unMousedElement = document.getElementById(ident);
     unMousedElement.style.color = null;
     unMousedElement.style.backgroundColor = null;
+    unMousedElement.style.fontFamily = null;
     unMousedElement.style.fontSize = null;
 }

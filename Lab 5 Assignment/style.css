@@ -61,7 +61,7 @@ a:active {
     display: table-row;
 }
 
-div {
+.Table {
     display: table-cell;
     border: solid;
     border-width: thin;
@@ -85,10 +85,15 @@ div {
 }
 
 /* Defines positioning for navigation bar.*/
-.navbar {
-    float: right;
-    position: relative;
+nav {
+    float: left;
+    position: absolute;
+    display: inline-block;
     border: none;
+    font-size: 50px;
+    top:0;
+    border:solid; 
+    border-width: thick;
 }
 
 /* Defines positioning and style for drop down menu.*/
@@ -98,12 +103,26 @@ div {
     background-color: #69b6b3;
 }
 
+/* Defines style for the navigation bar items*/
+.navItem {
+    border:solid; 
+    border-width: thin;
+    background-color: white;
+}
+
 /* Vertically shows dropdown menu links. */
 .content a {
     display: block;
+    border:solid; 
+    border-width: thick;
 }
 
 /* Makes dropdown menu visible.*/
 .show {
     display: block;
+}
+
+/* Defines style for the button*/
+.menuButton {
+    font-size: 50px;
 }

@@ -10,67 +10,62 @@
 </head>
 
 <body>
-<h1>course Table</h1>
-<hr>
- <!-- These div tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
-  the "Contact Menu" offers a drop down button for accssing contact external websites. Additionally, upon being moused over, the links highlight and lose their
-  highlight after no longer being moused over and the "Contact menu" opens when clicked. After clicking anywhere else on screen the "Conctact Menu" closes.-->
-<div class="navbar">
-    <div>
+<!-- These nav tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
+the "Contact Menu" offers a drop down button for accssing contact external websites. Additionally, upon being moused over, the links highlight and lose their
+highlight after no longer being moused over and the "Contact menu" opens when clicked. After clicking anywhere else on screen the "Conctact Menu" closes.-->
+<div >
+    <nav>
         <button class="menuButton" onclick="dropDownFunciton()">Contact Menu</button>
         <div id="menu" class="content">
             <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="github" href="https://github.com/VladimirPoliak/VladimirPoliak.github.io">GitHub Contact</a>
             <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="linkedin" href="https://linkedin.com/in/vladimir-p-b315331aa/">LinkedIn Contact</a>
         </div>
-    </div>
-    <div>   
-        <a onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" id="home" href="index.html">Home</a>
-    </div> 
-    <div>
-        <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="awards" href="awards_achivements.html">Awards/Achievements</a>
-    </div>
-    <div>
-        <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="courses" href="courses.html">Courses</a>
-    </div>
+        <a class="navItem" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" id="home" href="index.html">Home</a>
+        <a class="navItem" onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="awards" href="awards_achivements.html">Awards/Achievements</a>
+        <a class="navItem" onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="courses" href="courses.html">Courses</a>
+    </nav>
 </div>
 <br>
+<hr>   
+<h1>course Table</h1>
+<hr>
 <h2>Courses Taken This Semester (In Order)</h2>
 <!-- This creates a table with links for the different classes taken.-->
 <div class="Row">
-    <div><a href="https://www.torontomu.ca/calendar/2024-2025/courses/finance/FIN/300/">FIN 300</a></div>
-    <div>
+    <div class="Table"><a href="https://www.torontomu.ca/calendar/2024-2025/courses/finance/FIN/300/">FIN 300</a></div>
+    <div class="Table">
         Managerial Finance
         <br>
         Introductory course to financial investement.
     </div>
 </div>
 <div class="Row">
-    <div><a href="https://continuing.torontomu.ca/search/publicCourseSearchDetails.do?method=load&courseId=26371">CCHY 583</a></div>
-    <div>
+    <div class="Table"><a href="https://continuing.torontomu.ca/search/publicCourseSearchDetails.do?method=load&courseId=26371">CCHY 583</a></div>
+    <div class="Table">
         Alternative Energies
         <br>
         Course about different types of renewable energies.
     </div>
 </div>
 <div class="Row">
-    <div><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/618/">ITM 618</a></div>
-    <div>
+    <div class="Table"><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/618/">ITM 618</a></div>
+    <div class="Table">
         Business Intelligence and Analytics
         <br>
         Introductory course to preforming data analysis.
     </div>
 </div>
 <div class="Row">
-    <div><a href="https://www.torontomu.ca/information-technology-management/course-outlines/ITM780.pdf">ITM 780</a></div>
-    <div>
+    <div class="Table"><a href="https://www.torontomu.ca/information-technology-management/course-outlines/ITM780.pdf">ITM 780</a></div>
+    <div class="Table">
         Web Design and Managment
         <br>
         Course about how to design websites and code.
     </div>
 </div>
 <div class="Row">
-    <div><a href=https://www.torontomu.ca/information-technology-management/course-outlines/ITM706.pdf>ITM 706</a></div>
-    <div>
+    <div class="Table"><a href=https://www.torontomu.ca/information-technology-management/course-outlines/ITM706.pdf>ITM 706</a></div>
+    <div class="Table">
         Enterprise Architecture
         <br>
         Course on defining business structure and organizational processes.
