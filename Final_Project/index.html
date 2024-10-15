@@ -5,12 +5,18 @@
         <title>
             File Name
         </title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!--<script src="https://cdn.tailwindcss.com"></script>-->
+        <link rel="stylesheet" href="tailwind.css"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <div>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+        </div>
     </head>
 
 
-    <body>
+    <body class="dark: bg-black">
         <!--Ensures the nagivation bar stays at the top of the screen and takes up the entire screen view.
         It also ensures the navigation elements are evenly spaced out.-->
         <nav class="flex sticky top-0 bg-blue-200 w-full border-4 border-black"> 
@@ -44,42 +50,104 @@
                 Contact Information
             </div>
         </nav>
-        <div>
-            <div class="static inset-0 flex justify-center">
+        <!--This specifies that all elememnts in the div fill out the entire screen.-->
+        <div class="flex overflow-x-scroll dark:text-white">
+            <!--This specifies that the specific div should fill out the entire screen.-->
+            <div class="min-w-full">
+                <div class="static inset-0 flex justify-center">
+                    <div>
+                        <h1 class="text-6xl font-sharetech">
+                            Vladimir Poliak's Personal Portfolio Wesbite
+                        </h1>
+                        <h6 class="text-2xl font-sharetech
+                        flex justify-center">
+                            Updaged Oct 12 2024
+                        </h6>
+                    </div>
+                </div>
+                
+                <div class="static inset-0 flex justify-center">
+                    <div>
+                        <h2 class="text-center my-10 text-lg">Introduciton</h2>
+                        <p class="text-2xl font-sharetech text-center
+                        flex justify-center mx-28">
+                            I am Vladimir Poliak, a third-year Business Technology Management Co-op major. 
+                            I am eager to learn more about the IT and Management profession with hands-on experience. 
+                            After graduating with high school honours in business, 
+                            I genuinely valued my high school co-op experience and want to continue pursuing a similar path in university with your program at your organization. 
+                            I participated in several Ted Rogers Bootcamps, such as Excel and R Studio, and obtained the Microsoft Office Certification to strengthen my adaptability 
+                            and problem-solving skills while showing my initiative, self-motivation and organizational skills.
+                        </p>
+                    </div>
+                </div>
+                
                 <div>
-                    <h1>Vladimir Poliak's Personal Portfolio Wesbite</h1>
-                    <h6 class="flex justify-center">Updaged Oct 12 2024</h6>
+                    <h2>Breif Overview of Experience</h2>
+                    <div>
+                        <p>
+                            IT Rotational Co-op, Workplace Safety and Insurance Board
+                            <br>
+                            May 2023 - Present
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Personal Shopper, Coernershop by Uber
+                            <br>
+                            2020 - April 2023
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Deputy Returning Officer (Computer), Elections Ontario
+                            <br>
+                            June 2022
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Deputy Returning Officer, Elections Canada
+                            <br>
+                            September 2021
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            IT Technologist, Primary Support Systems
+                            <br>
+                            February 2020 - March 2020
+                        </p>
+                    </div>
                 </div>
             </div>
-            
-            <div>
-                <h2>Introduciton</h2>
-                <p>
-                    I am Vladimir Poliak, a third-year Business Technology Management Co-op major. 
-                    I am eager to learn more about the IT and Management profession with hands-on experience. 
-                    <br>
-                    After graduating with high school honours in business, 
-                    I genuinely valued my high school co-op experience and want to continue pursuing a similar path in university with your program at your organization. 
-                    <br>
-                    I participated in several Ted Rogers Bootcamps, such as Excel and R Studio, and obtained the Microsoft Office Certification to strengthen my adaptability 
-                    and problem-solving skills while showing my initiative, self-motivation and organizational skills.
-                </p>
-            </div>
-            
-            <div>
-                <h2>Breif Overview of Experience</h2>
+            <!--This specifies that the specific div should fill out the entire screen.-->
+            <div  class="min-w-full">
+                <div>
+                    <h2>Full Work Experience</h2>
+                </div>
+
+                <div>
+                    <h3>Technology Experence</h3>
+                </div>
+                
                 <div>
                     <p>
                         IT Rotational Co-op, Workplace Safety and Insurance Board
                         <br>
                         May 2023 - Present
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Personal Shopper, Coernershop by Uber
-                        <br>
-                        2020 - April 2023
+                        <div>
+                            Created two+ business process diagrams monthly by paying attention to detail and outlining every business process step in a use case that was used for process automation.
+                            <br>
+                            Participated in three+ meetings daily, taking detailed meeting notes when necessary to ensure all required information was identified using active listening and communication.
+                            <br>
+                            Consistently demonstrated teamwork and communication by always working with co-workers to ensure everyone knows what they are doing and that projects can be completed on time.
+                            <br>
+                            Took detailed technical notes in ticket tracking software when helping five+ clients daily with technical issues they were experiencing using active listening and customer service skills.
+                            <br>
+                            Effectively communicated with coworkers to understand the necessary steps to troubleshoot different technical issues before becoming comfortable solving them independently.
+                            <br>
+                            Effectively communicated with coworkers to make automation flows using Power Automate to simplify manual processes.
+                        </div>
                     </p>
                 </div>
                 <div>
@@ -87,13 +155,15 @@
                         Deputy Returning Officer (Computer), Elections Ontario
                         <br>
                         June 2022
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Deputy Returning Officer, Elections Canada
-                        <br>
-                        September 2021
+                        <div>
+                            Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
+                            <br>
+                            Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
+                            <br>
+                            Used computer software similar to Excel to search for voters using a bar code scanner or manually inputting their information, demonstrating computer literacy.
+                            <br>
+                            Assisted colleagues with issues and questions they had, demonstrating collaboration and communication.
+                        </div>
                     </p>
                 </div>
                 <div>
@@ -101,220 +171,173 @@
                         IT Technologist, Primary Support Systems
                         <br>
                         February 2020 - March 2020
+                        <div>
+                            Upgraded five customers' computers by replacing RAM and hard drives, ensuring their systems were in working order using attention to detail and problem-solving to troubleshoot and ensure customer satisfaction.
+                            <br>
+                            Assisted in setting up six computers, five devices and two networks, removing viruses from two infected devices by collaborating with co-workers and ensuring customers received the highest quality service.
+                            <br>
+                            Helped with handiwork and cleanup of the office space by organizing everything to ensure cleanliness and a streamlined work environment while maintaining a positive attitude.
+                            <br>
+                            Worked in six different locations, demonstrating adaptability to different environments and an eagerness to learn procedures for each case, ensuring the same level of quality in each.
+                        </div>
+                    </p>
+                </div>
+                
+                <div>
+                    <h3>Miscalanious Experience</h3>
+                </div> 
+                
+                <div>
+                    <p>
+                        Personal Shopper, Cornershop by Uber
+                        <br>
+                        2020 - April 2023
+                        <div>
+                            Fulfiled six+ customer orders daily by paying attention to detail and ensuring customer satisfaction.
+                            <br>
+                            Demonstrated customer service by having a positive attitude while using communication and interpersonal skills with six+ customers daily, ensuring they get what they need and understand the problems at hand.
+                            <br>
+                            Delivered purchased items to customers' exact addresses through adaptability and attention to detail, ensuring everything reached the desired destination, from different stores to diverse addresses.
+                            <br>
+                            Solved problems, such as missing products, as they arise three to four times a day, demonstrating creativity, adaptability and problem-solving skills and ensuring orders get fulfilled with a high degree of accuracy.
+                        </div>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Deputy Returning Officer, Elections Canada
+                        <br>
+                        September 2021
+                        <div>
+                            Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
+                            <br>
+                            Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
+                            <br>
+                            Dealt with 10+ forms for name changes and address changes, demonstrating adaptability.
+                            <br>
+                            Assisted colleagues with issues and questions they had, demonstrating collaboration and communication.
+                        </div>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Poll Clerk, Elections Canada
+                        <br>
+                        October 2019
+                        <div>
+                            Examined IDs of 120+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
+                            <br>
+                            Worked for 13+ hours in a single location without getting burnt out, demonstrating endurance and commitment.
+                            <br>
+                            Dealt with 8+ forms for name changes and address changes, demonstrating adaptability.
+                            <br>
+                            Assisted the DRO with issuing ballots, filling out information and cleaning up the work area after the shift was over, demonstrating collaboration and cooperation.
+                        </div>
                     </p>
                 </div>
             </div>
-        </div>
+            <!--This specifies that the specific div should fill out the entire screen.-->
+            <div  class="min-w-full">
+                <div>
+                    <h2>Qualifications</h2>
+                </div>
 
-        <div class="inline-block">
-            <div>
-                <h2>Full Work Experience</h2>
+                <div>
+                    <p>
+                        Learned how to assemble computers and networks, fixed broken computer hardware, helped deploy LAN/WAN networks, and troubleshoot malfunctioning devices.
+                        <br>
+                        Education in Programming with Python 3 was obtained through three years of computer science courses and two university classes.
+                        <br>
+                        Ability to quickly catch onto new skills due to eagerness and commitment to learning, for example, getting an R Studio Code and Python certification through Ted Rogers Bootcamps.
+                        <br>
+                        Excellent teamwork capability, showing initiative in helping co-workers and supervisors during co-op terms.
+                        <br>
+                        Specialist High Skills Major in business obtained through multiple years of hard work to fulfil the required qualifications and classes in high school, including coop, business and extracurricular events.
+                        <br>
+                        Capability to communicate fluently in Russian and English.
+                    </p>
+                </div>
+            </div>
+            <!--This specifies that the specific div should fill out the entire screen.-->
+            <div  class="min-w-full">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+
+                <div>
+                    <p>
+                        My experience in high school Co-op taught me about support technician work, such as resetting hard drives, upgrading computers and laying out ethernet cables. In university, I took an IT networking course regarding network infrastructure, which taught me about different aspects of LAN/WAN configurations and wireless networks. I have also completed lots of independent research on fixing circuit boards and other microelectronics.
+                        <br>
+                        An example of my past Co-op experience is when I participated in a team of full-time employees to deploy new software to all computers in the organization. It required issue resolution through ServiceNow to ensure any problems people experienced with the newly deployed software could be solved in a timely manner. Additionally, knowledge documentation had to be created in relation to the new software, so other technicians would be able to quickly find solutions to common problems.
+                        <br>
+                        Third project about visio..
+                        Project About ITM 301.
+                        <br>
+                        Project About ITM 820..
+                        <br>
+                        Project About ITM 706...
+                    </p>
+                </div>
             </div>
 
             <div>
-                <h3>Technology Experence</h3>
+                <h2>Micro-credentials</h2>
             </div>
-            
-            <div>
-                <p>
-                    IT Rotational Co-op, Workplace Safety and Insurance Board
-                    <br>
-                    May 2023 - Present
-                    <div>
-                        Created two+ business process diagrams monthly by paying attention to detail and outlining every business process step in a use case that was used for process automation.
+            <!--This specifies that the specific div should fill out the entire screen.-->
+            <div class="min-w-full">
+                <div>
+                    <h2>Personal Achivements</h2>
+                </div>
+
+                <div>
+                    <p>
+                        Evelina J. Thompson Co-op Excellence Award, TMU
                         <br>
-                        Participated in three+ meetings daily, taking detailed meeting notes when necessary to ensure all required information was identified using active listening and communication.
+                        2023
                         <br>
-                        Consistently demonstrated teamwork and communication by always working with co-workers to ensure everyone knows what they are doing and that projects can be completed on time.
+                        Deans List, TRSM
                         <br>
-                        Took detailed technical notes in ticket tracking software when helping five+ clients daily with technical issues they were experiencing using active listening and customer service skills.
+                        2022 and 2023
                         <br>
-                        Effectively communicated with coworkers to understand the necessary steps to troubleshoot different technical issues before becoming comfortable solving them independently.
+                        Removing Obstacles Creating Capacity Award, WSIB 
                         <br>
-                        Effectively communicated with coworkers to make automation flows using Power Automate to simplify manual processes.
-                    </div>
-                </p>
+                        2023
+                        <br>
+                        Canadian National Champion 2022 Microsoft Office Specialist, Certiport
+                        <br>
+                        2022
+                        <br>
+                        Best-Strategy Invitational Distinguished Participant Certificate, Glo-Bus 
+                        <br>
+                        2022
+                        <br>
+                        Top 10% Engaged, TRSM
+                        <br>
+                        2022
+                        <br>
+                        Business Leadership: Management Fundamentals Award, Hodan Nalayeh Secondary School 
+                        <br>
+                        2021
+                        <br>
+                        International Business Fundamentals Award, Hodan Nalayeh Secondary School
+                        <br>
+                        2021
+                        <br>
+                        Sports and Entertainment Marketing Award, Hodan Nalayeh Secondary School 
+                        <br>
+                        2021
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    Deputy Returning Officer (Computer), Elections Ontario
-                    <br>
-                    June 2022
-                    <div>
-                        Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
-                        <br>
-                        Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
-                        <br>
-                        Used computer software similar to Excel to search for voters using a bar code scanner or manually inputting their information, demonstrating computer literacy.
-                        <br>
-                        Assisted colleagues with issues and questions they had, demonstrating collaboration and communication.
-                    </div>
-                </p>
+            <div class="min-w-full">
+                <div>
+                    <h2>Contact</h2>
+                </div>
+
+                <div>
+                    Links to contact information and form to fill out to send an email.
+                </div>
             </div>
-            <div>
-                <p>
-                    IT Technologist, Primary Support Systems
-                    <br>
-                    February 2020 - March 2020
-                    <div>
-                        Upgraded five customers' computers by replacing RAM and hard drives, ensuring their systems were in working order using attention to detail and problem-solving to troubleshoot and ensure customer satisfaction.
-                        <br>
-                        Assisted in setting up six computers, five devices and two networks, removing viruses from two infected devices by collaborating with co-workers and ensuring customers received the highest quality service.
-                        <br>
-                        Helped with handiwork and cleanup of the office space by organizing everything to ensure cleanliness and a streamlined work environment while maintaining a positive attitude.
-                        <br>
-                        Worked in six different locations, demonstrating adaptability to different environments and an eagerness to learn procedures for each case, ensuring the same level of quality in each.
-                    </div>
-                </p>
-            </div>
-            
-            <div>
-                <h3>Miscalanious Experience</h3>
-            </div> 
-            
-            <div>
-                <p>
-                    Personal Shopper, Cornershop by Uber
-                    <br>
-                    2020 - April 2023
-                    <div>
-                        Fulfiled six+ customer orders daily by paying attention to detail and ensuring customer satisfaction.
-                        <br>
-                        Demonstrated customer service by having a positive attitude while using communication and interpersonal skills with six+ customers daily, ensuring they get what they need and understand the problems at hand.
-                        <br>
-                        Delivered purchased items to customers' exact addresses through adaptability and attention to detail, ensuring everything reached the desired destination, from different stores to diverse addresses.
-                        <br>
-                        Solved problems, such as missing products, as they arise three to four times a day, demonstrating creativity, adaptability and problem-solving skills and ensuring orders get fulfilled with a high degree of accuracy.
-                    </div>
-                </p>
-            </div>
-            <div>
-                <p>
-                    Deputy Returning Officer, Elections Canada
-                    <br>
-                    September 2021
-                    <div>
-                        Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
-                        <br>
-                        Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
-                        <br>
-                        Dealt with 10+ forms for name changes and address changes, demonstrating adaptability.
-                        <br>
-                        Assisted colleagues with issues and questions they had, demonstrating collaboration and communication.
-                    </div>
-                </p>
-            </div>
-            <div>
-                <p>
-                    Poll Clerk, Elections Canada
-                    <br>
-                    October 2019
-                    <div>
-                        Examined IDs of 120+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
-                        <br>
-                        Worked for 13+ hours in a single location without getting burnt out, demonstrating endurance and commitment.
-                        <br>
-                        Dealt with 8+ forms for name changes and address changes, demonstrating adaptability.
-                        <br>
-                        Assisted the DRO with issuing ballots, filling out information and cleaning up the work area after the shift was over, demonstrating collaboration and cooperation.
-                    </div>
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <h2>Qualifications</h2>
-        </div>
-
-        <div>
-            <p>
-                Learned how to assemble computers and networks, fixed broken computer hardware, helped deploy LAN/WAN networks, and troubleshoot malfunctioning devices.
-                <br>
-                Education in Programming with Python 3 was obtained through three years of computer science courses and two university classes.
-                <br>
-                Ability to quickly catch onto new skills due to eagerness and commitment to learning, for example, getting an R Studio Code and Python certification through Ted Rogers Bootcamps.
-                <br>
-                Excellent teamwork capability, showing initiative in helping co-workers and supervisors during co-op terms.
-                <br>
-                Specialist High Skills Major in business obtained through multiple years of hard work to fulfil the required qualifications and classes in high school, including coop, business and extracurricular events.
-                <br>
-                Capability to communicate fluently in Russian and English.
-            </p>
-        </div>
-
-        <div>
-            <h2>Projects</h2>
-        </div>
-
-        <div>
-            <p>
-                My experience in high school Co-op taught me about support technician work, such as resetting hard drives, upgrading computers and laying out ethernet cables. In university, I took an IT networking course regarding network infrastructure, which taught me about different aspects of LAN/WAN configurations and wireless networks. I have also completed lots of independent research on fixing circuit boards and other microelectronics.
-                <br>
-                An example of my past Co-op experience is when I participated in a team of full-time employees to deploy new software to all computers in the organization. It required issue resolution through ServiceNow to ensure any problems people experienced with the newly deployed software could be solved in a timely manner. Additionally, knowledge documentation had to be created in relation to the new software, so other technicians would be able to quickly find solutions to common problems.
-                <br>
-                Third project about visio..
-                Project About ITM 301.
-                <br>
-                Project About ITM 820..
-                <br>
-                Project About ITM 706...
-            </p>
-        </div>
-
-        <div>
-            <h2>Micro-credentials</h2>
-        </div>
-
-        <div>
-            <h2>Personal Achivements</h2>
-        </div>
-
-        <div>
-            <p>
-                Evelina J. Thompson Co-op Excellence Award, TMU
-                <br>
-                2023
-                <br>
-                Deans List, TRSM
-                <br>
-                2022 and 2023
-                <br>
-                Removing Obstacles Creating Capacity Award, WSIB 
-                <br>
-                2023
-                <br>
-                Canadian National Champion 2022 Microsoft Office Specialist, Certiport
-                <br>
-                2022
-                <br>
-                Best-Strategy Invitational Distinguished Participant Certificate, Glo-Bus 
-                <br>
-                2022
-                <br>
-                Top 10% Engaged, TRSM
-                <br>
-                2022
-                <br>
-                Business Leadership: Management Fundamentals Award, Hodan Nalayeh Secondary School 
-                <br>
-                2021
-                <br>
-                International Business Fundamentals Award, Hodan Nalayeh Secondary School
-                <br>
-                2021
-                <br>
-                Sports and Entertainment Marketing Award, Hodan Nalayeh Secondary School 
-                <br>
-                2021
-            </p>
-        </div>
-
-        <div>
-            <h2>Contact</h2>
-        </div>
-
-        <div>
-            Links to contact information and form to fill out to send an email.
         </div>
 
     </body>
