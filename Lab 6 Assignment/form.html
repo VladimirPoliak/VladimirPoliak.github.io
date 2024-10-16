@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Vladimir Poliak Lab 6 Assignment</title>
+        <!-- This assign the style.css sheet and main.js program file to this HTML website.-->
+        <link rel="stylesheet" href="style.css">
+        <script src="form.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <hr>    
+        <h1>Vladimir Poliak's Website For ITM780 Lab 5</h1>
+        <hr>
+        <h2>Contact Form</h2>
+        <form onsubmit="formSubmission()"> <!--Must have radio buttons, check boxes, single text field and multiple text field.-->
+            <h4>Please Enter Your Name:</h4>
+            <!--This provides a field for the user to enter their name and last name.-->
+            <input id="fName" type="text" value="ABC"> Please Enter Your First Name
+            <br>
+            <input id="lName" type="text" value="ABC"> Please Enter Your Last Name
+            <br>
+            <h4>Please Select Your Email:</h4>
+            <!--This provides a field for the user to enter their email with a special type.-->
+            <input id="email" type="email" value="ABC"> Please Enter Your Email
+            <h4>Please Select Your Role:</h4>
+            <!--This provides a set of radio buttons letting the user select which type of employee they are with "other employee..." being the default-->
+            <input type="radio" name="choice" value="Recruiting (Manager)"> Recruiting (Manager)
+            <br>
+            <input type="radio" name="choice" value="Recruiter (Non Manager)"> Recruiter (Non Manager)
+            <br>
+            <input type="radio" name="choice" value="Human Resources (With Hiring Repsponsibility)"> Human Resources (With Hiring Repsponsibility)
+            <br>
+            <input type="radio" name="choice" value="Other Employee (With Hiring Repsponsibility)"checked> Other Employee (With Hiring Repsponsibility)
+            <br>
+            <h4>Please Select Your Provience:</h4>
+            <!--This allows people to select a province they are from a drop down selection.-->
+            <select name="province">
+                <option value="Ontario">Ontario</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nunavut">Nunavut</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="New Brunswik">New Brunswik</option>
+                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Yukon">Yukon</option>
+            </select>
+            <br>
+            <h4>Please Select All That Apply:</h4>
+            <!--This allows people to select all the checkboxes for the opiinions they agree with.-->
+            <input type="checkbox" name="opinions" value="None" checked>None <br>
+            <input type="checkbox" name="opinions" value="I Often See Personal Portfolio Websites" >I Often See Personal Portfolio Websites <br>
+            <input type="checkbox" name="opinions" value="I Looked at Your Resume Before Your Personal Portfolio Website" >I Looked at Your Resume Before Your Personal Portfolio Website <br>
+            <input type="checkbox" name="opinions" value="This Personal Portfolio Website Makes Me More Memorable" >This Personal Portfolio Website Makes Me More Memorable <br>
+            <input type="checkbox" name="opinions" value="I Think The Personal Portfolio Website Needs Improvement" >I Think The Personal Portfolio Website Needs Improvement <br>
+            <input type="checkbox" name="opinions" value="I Think This Website Will Likely Get an Interview" >I Think This Website Will Likely Get an Interview <br>
+            <br>
+            <!--This provides a color selection tool for the user to select their favorite color.-->
+            <h4>Please Select All That Apply:</h4>
+            <input id="color" type="color" value="#ffffff"> Please Select Your Favorite Color
+            <br>
+            <h4>Please Enter Your Feedback Regarding the Website :</h4>
+            <textarea id="feedback" rows="5" cols="23" value="abc">Please Write Feedback Here</textarea>
+            <!--This allows the user to reset the form.-->
+            <input type="reset">
+            <!--This allows the user to submit the form.-->
+            <input type="submit">
+            <!--This allows the user to cancel the form and go back to the home page.-->
+            <input type="button" onclick=formCancel() value="Cancel Form/Back to Home Page">
+            <input type="button" onclick=showResults() value="Show User Input">
+        </form>
+        <footer>
+            <small>
+                By Vladimir Poliak, 501081121, vladimir.poliak@torontomu.ca
+            </small>
+        </footer> 
+    </body>
+</html>
