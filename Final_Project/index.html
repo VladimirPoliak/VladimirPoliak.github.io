@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="tailwind.css"></link> <!--needs to be fixed to work with resizable elements-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="main.js"></script>
         <div>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,58 +18,52 @@
     </head>
 
 
-    <body class="bg-white dark:bg-black">
+    <body id="fulldoc" class="bg-white 
+    dark:bg-black">
         <!--Ensures the nagivation bar stays at the top of the screen and takes up the entire screen view.
         It also ensures the navigation elements are evenly spaced out.-->
-        <nav class="flex shrink sticky top-0 bg-blue-200 w-full overflow-x-scroll
+        <nav class="flex shrink sticky top-0 w-full overflow-x-scroll bg-blue-200 py-2 
         sm:flex-shrink 
-        xl:border-4 
-        xl:border-black"> 
-            <!--Each of these elements is positioned evenly with deliniation lines and follows the screen when you scroll.-->
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Homepage
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Work Experience
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Qualifications
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Projects
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Micro-credentials
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Personal Achievements
-            </div>
-            <div class="font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm md:border-black md:border-x-1
-            xl:px-4 xl:border-x-4 xl:text-2xl">
-                Contact Information
-            </div>
+        xl:overflow-hidden"> 
+            <!--Each of these elements is positioned evenly with each button being rounded.-->
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Home
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Work Experience
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Qualifications
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Projects
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Micro-credentials
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Personal Achivements
+            </button>
+            <button type="button" class="bg-blue-400 hover:bg-blue-600 rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-2xl">Contact
+            </button>
         </nav>
         <!--This specifies that all elememnts in the div fill out the entire screen.-->
-        <div class="flex overflow-x-scroll dark:text-white">
+        <div class="flex overflow-x-scroll 
+        dark:text-white">
             <!--This specifies that the specific div should fill out the entire screen.-->
             <div class="min-w-full">
-                <div class="static inset-0 flex justify-center">
+                <div class="flex justify-center">
                     <div>
                         <h1 class="font-sharetech text-center text-2xl
-                        xl:text-6xl">
+                        xl:text-7xl">
                             Vladimir Poliak's Personal Portfolio Wesbite
                         </h1>
                         <h6 class="font-sharetech flex justify-center text-xs
@@ -78,12 +73,15 @@
                     </div>
                 </div>
                 
-                <div class="static inset-0 flex justify-center">
+                <div class="flex justify-center rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <div>
-                        <h2 class="text-center my-10 text-sm
+                        <h2 class="font-sharetech text-center my-4 text-sm
                         xl:text-3xl">Introduciton</h2>
-                        <p class=" font-sharetech text-center flex justify-center text-sm mx-14
-                        xl:text-2xl xl:mx-28">
+                        <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                        xl:text-3xl">
                             I am Vladimir Poliak, a third-year Business Technology Management Co-op major. 
                             I am eager to learn more about the IT and Management profession with hands-on experience. 
                             After graduating with high school honours in business, 
@@ -93,46 +91,51 @@
                         </p>
                     </div>
                 </div>
-                
-                <div>
-                    <h2>Breif Overview of Experience</h2>
+
+                <div class="flex justify-center rounded border-4 border-black my-20
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <div>
-                        <p>
-                            IT Rotational Co-op, Workplace Safety and Insurance Board
-                            <br>
-                            May 2023 - Present
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Personal Shopper, Coernershop by Uber
-                            <br>
-                            2020 - April 2023
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Deputy Returning Officer (Computer), Elections Ontario
-                            <br>
-                            June 2022
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Deputy Returning Officer, Elections Canada
-                            <br>
-                            September 2021
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            IT Technologist, Primary Support Systems
-                            <br>
-                            February 2020 - March 2020
-                        </p>
+                        <h2 class="font-sharetech text-center my-4 text-sm 
+                        xl:text-3xl">Breif Overview of Experience</h2>
+                        <ul class="font-sharetech text-center flex justify-center text-xs mx-0 border-t-4 border-black
+                        xl:text-3xl border-t-8">
+                            <p class="border-r-2 border-black
+                            xl:border-r-4">
+                                IT Rotational Co-op, Workplace Safety and Insurance Board
+                                <br>
+                                May 2023 - Present
+                            </p>
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
+                                Personal Shopper, Coernershop by Uber
+                                <br>
+                                2020 - April 2023
+                            </p>
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
+                                Deputy Returning Officer (Computer), Elections Ontario
+                                <br>
+                                June 2022
+                            </p>
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
+                                Deputy Returning Officer, Elections Canada
+                                <br>
+                                September 2021
+                            </p>
+                            <p class="border-l-2 border-black
+                            xl:border-l-4">
+                                IT Technologist, Primary Support Systems
+                                <br>
+                                February 2020 - March 2020
+                            </p>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
             <!--This specifies that the specific div should fill out the entire screen.-->
             <div  class="min-w-full">
                 <div>
