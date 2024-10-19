@@ -18,10 +18,11 @@
     </head>
 
 
-    <body class="bg-white text-black dark:bg-gray-950 dark:text-white">
+    <body class="bg-white stroke-slate-400 
+    dark:bg-black dark:">
         <!--Ensures the nagivation bar stays at the top of the screen and takes up the entire screen view.
         It also ensures the navigation elements are evenly spaced out.-->
-        <nav class="flex shrink fixed w-full overflow-x-scroll py-2 mb-8
+        <nav class="flex shrink fixed w-full overflow-x-scroll bg-blue-200 py-2 mb-8
         sm:flex-shrink
         md:overflow-hidden
         xl:overflow-hidden"> 
@@ -56,9 +57,8 @@
             </button>
         </nav>
         <!--This specifies that all elememnts in the div fill out the entire screen.-->
-        <div id="main" class="flex pt-20 
+        <div id="main" class="flex pt-20
         dark:text-white
-        sm:space-x-24
         md:pt-10
         xl:pt-14">
             <!--This specifies that the specific div should fill out the entire screen.-->
@@ -76,7 +76,10 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"> <!--https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
+                <div class="flex justify-center rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <div>
                         <h2 class="font-sharetech text-center my-4 text-sm
                         xl:text-3xl">Introduciton</h2>
@@ -92,38 +95,41 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
+                <div class="flex justify-center rounded border-4 border-black my-20
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <div>
                         <h2 class="font-sharetech text-center my-4 text-sm 
                         xl:text-3xl">Breif Overview of Experience</h2>
                         <ul class="font-sharetech text-center flex justify-center text-xs mx-0 border-t-4 border-black
                         xl:text-3xl border-t-8">
-                            <p class="border-r-2 border-black text-gray-900 dark:text-gray-300
+                            <p class="border-r-2 border-black
                             xl:border-r-4">
                                 IT Rotational Co-op, Workplace Safety and Insurance Board
                                 <br>
                                 May 2023 - Present
                             </p>
-                            <p class="border-r-2 border-black text-gray-900 dark:text-gray-300
-                            xl:border-r-4">
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
                                 Personal Shopper, Coernershop by Uber
                                 <br>
                                 2020 - April 2023
                             </p>
-                            <p class="border-r-2 border-black text-gray-900 dark:text-gray-300
-                            xl:border-r-4">
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
                                 Deputy Returning Officer (Computer), Elections Ontario
                                 <br>
                                 June 2022
                             </p>
-                            <p class="border-r-2 border-black text-gray-900 dark:text-gray-300
-                            xl:border-r-4">
+                            <p class="border-x-2 border-black
+                            xl:border-x-4">
                                 Deputy Returning Officer, Elections Canada
                                 <br>
                                 September 2021
                             </p>
-                            <p class="border-r-2 border-black text-gray-900 dark:text-gray-300
-                            xl:border-r-4">
+                            <p class="border-l-2 border-black
+                            xl:border-l-4">
                                 IT Technologist, Primary Support Systems
                                 <br>
                                 February 2020 - March 2020
@@ -139,49 +145,58 @@
                     <h2 class="font-sharetech flex justify-center text-xl
                     xl:text-4xl">Full Work Experience</h2>
                 </div>
-
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
-                    md:max-w-48
-                    xl:text-xl xl:max-w-64">
+                <!--
+                <div>
+                    <h3 class="font-sharetech flex justify-center text-xs
+                    xl:text-3xl">Technology Experence</h3>
+                </div>
+                -->
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
                         IT Rotational Co-op, Workplace Safety and Insurance Board
                         <br>
                         May 2023 - Present
-                        <ul class="font-sharetech text-xs list-disc
-                        xl:text-lg">
+                        <ul class="font-sharetech flex justify-center text-sm">
                             <li>
                                 Created two+ business process diagrams monthly by paying attention to detail and outlining every business process step in a use case that was used for process automation.
                             </li>
                             <li>
                                 Participated in three+ meetings daily, taking detailed meeting notes when necessary to ensure all required information was identified using active listening and communication.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Consistently demonstrated teamwork and communication by always working with co-workers to ensure everyone knows what they are doing and that projects can be completed on time.
                             </li>
                             <li>
                                 Took detailed technical notes in ticket tracking software when helping five+ clients daily with technical issues they were experiencing using active listening and customer service skills.
                             </li>
-                            <li >
+                            <li>
                                 Effectively communicated with coworkers to understand the necessary steps to troubleshoot different technical issues before becoming comfortable solving them independently.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Effectively communicated with coworkers to make automation flows using Power Automate to simplify manual processes.
                             </li>
+                            
                         </ul>
                     </p>
                 </div>
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
-                    xl:text-xl xl:max-w-64">
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
                         Deputy Returning Officer (Computer), Elections Ontario
                         <br>
                         June 2022
-                        <ul class="font-sharetech text-xs list-disc
-                        xl:text-lg">
-                            <li class="hidden xl:block">
+                        <ul class="font-sharetech flex justify-center text-md">
+                            <li>
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
                             </li>
                             <li>
@@ -192,43 +207,77 @@
                         </ul>
                     </p>
                 </div>
-
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
-                    xl:text-xl xl:max-w-64">
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
                         IT Technologist, Primary Support Systems
                         <br>
                         February 2020 - March 2020
-                        <ul class="font-sharetech text-xs list-disc
-                        xl:text-lg"> <!--https://tailwind-nextjs-starter-blog.vercel.app/blog-->
+                        <ul class="font-sharetech flex justify-center text-md">
                             <li>
                                 Upgraded five customers' computers by replacing RAM and hard drives, ensuring their systems were in working order using attention to detail and problem-solving to troubleshoot and ensure customer satisfaction.
                             </li>
                             <li>
                                 Assisted in setting up six computers, five devices and two networks, removing viruses from two infected devices by collaborating with co-workers and ensuring customers received the highest quality service.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Helped with handiwork and cleanup of the office space by organizing everything to ensure cleanliness and a streamlined work environment while maintaining a positive attitude.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Worked in six different locations, demonstrating adaptability to different environments and an eagerness to learn procedures for each case, ensuring the same level of quality in each.
                             </li>
                         </ul>
                     </p>
                 </div>
-
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
-                    xl:text-xl xl:max-w-64">
+                <!--
+                <div>
+                    <h3 class="font-sharetech flex justify-center text-xs
+                    xl:text-3xl">Miscalanious Experience</h3>
+                </div> 
+                
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
+                        Personal Shopper, Cornershop by Uber
+                        <br>
+                        2020 - April 2023
+                        <ul class="font-sharetech flex justify-center text-sm">
+                            <li>
+                                Fulfiled six+ customer orders daily by paying attention to detail and ensuring customer satisfaction.
+                            </li>
+                            <li>
+                                Demonstrated customer service by having a positive attitude while using communication and interpersonal skills with six+ customers daily, ensuring they get what they need and understand the problems at hand.
+                            </li>
+                            <li>
+                                Delivered purchased items to customers' exact addresses through adaptability and attention to detail, ensuring everything reached the desired destination, from different stores to diverse addresses.
+                            </li>
+                            <li>
+                                Solved problems, such as missing products, as they arise three to four times a day, demonstrating creativity, adaptability and problem-solving skills and ensuring orders get fulfilled with a high degree of accuracy.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                -->
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
                         Deputy Returning Officer, Elections Canada
                         <br>
                         September 2021
-                        <ul class="font-sharetech text-xs list-disc
-                        xl:text-lg">
-                            <li class="hidden xl:block">    
+                        <ul class="font-sharetech flex justify-center text-md">
+                            <li>    
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
                             </li>
-                            <li class="hidden xl:block">
+                            <li>
                                 Worked for 12+ hours in a single location without burnout, demonstrating endurance and commitment.
                             </li>
                             <li>
@@ -240,6 +289,33 @@
                         </ul>
                     </p>
                 </div>
+                <!--
+                <div class="rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <p class="font-sharetech text-center flex justify-center text-sm mx-0
+                    xl:text-xl">
+                        Poll Clerk, Elections Canada
+                        <br>
+                        October 2019
+                        <ul class="font-sharetech flex justify-center text-sm">
+                            <li>
+                            Examined IDs of 120+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
+                            </li>
+                            <li>
+                                Worked for 13+ hours in a single location without getting burnt out, demonstrating endurance and commitment.
+                            </li>
+                            <li>
+                                Dealt with 8+ forms for name changes and address changes, demonstrating adaptability.
+                            </li>
+                            <li>
+                                Assisted the DRO with issuing ballots, filling out information and cleaning up the work area after the shift was over, demonstrating collaboration and cooperation.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                -->
             </div>
             
             <!--This specifies that the specific div should fill out the entire screen.-->
@@ -249,12 +325,12 @@
                     xl:text-3xl">Qualifications</h2>
                 </div>
 
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
-                    md:max-w-48
-                    xl:text-xl xl:max-w-64">
-                    <ul class="font-sharetech justify-center text-xs list-disc
-                        xl:text-lg">
+                <div class="flex justify-center rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
+                    <ul class="font-sharetech justify-center text-sm mx-0
+                    xl:text-3xl">
                         <li>
                             Learned how to assemble computers and networks, fixed broken computer hardware, helped deploy LAN/WAN networks, and troubleshoot malfunctioning devices.
                         </li>
@@ -283,7 +359,10 @@
                     xl:text-3xl">Projects</h2>
                 </div>
 
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
+                <div class="flex justify-center rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <ul class="font-sharetech justify-center text-sm mx-0
                     xl:text-3xl">
                         <li>    
@@ -317,7 +396,10 @@
                     xl:text-3xl">Personal Achivements</h2>
                 </div>
 
-                <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
+                <div class="flex justify-center rounded border-4 border-black my-4
+                dark:border-white dark:bg-blue-200 dark:text-black
+                sm:mx-14
+                xl:mx-32">
                     <ul class="font-sharetech justify-center text-sm mx-0
                     md:flex md:text-center
                     xl:text-2xl m">
