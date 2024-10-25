@@ -126,3 +126,26 @@ nav {
 .menuButton {
     font-size: 50px;
 }
+
+/* Defines the style for the form headers*/
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+    font-size: 140%;
+}
+
+/* Defins the style of the checkboxes and radio buttons.*/
+.formQuestions {
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: left;
+    justify-content: center;
+}
+
+/* Defines the style for the form content. */
+#form {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
