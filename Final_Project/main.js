@@ -10,4 +10,3 @@ function verticalToHorizontal(event) {
 
 //This scrollingElement eventlistner detects movement in the mousewheel and executes the verticalToHorizontal function.
 document.scrollingElement.addEventListener('wheel', verticalToHorizontal, {passive: false});
-
