@@ -6,15 +6,34 @@
         <!-- This assign the style.css sheet and main.js program file to this HTML website.-->
         <link rel="stylesheet" href="style.css">
         <script src="form.js"></script>
+        <script src="main.js"></script>
         <meta charset="utf-8">
     </head>
 
     <body>
-        <hr>    
-        <h1>Vladimir Poliak's Website For ITM780 Lab 5</h1>
+        <!-- These nav tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
+        the "Contact Menu" offers a drop down button for accssing contact external websites. Additionally, upon being moused over, the links highlight and lose their
+        highlight after no longer being moused over and the "Contact menu" opens when clicked. After clicking anywhere else on screen the "Conctact Menu" closes.-->
+        <div >
+            <nav>
+                <button class="menuButton" onclick="dropDownFunciton()">Contact Menu</button>
+                <div id="menu" class="content">
+                    <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="github" href="https://github.com/VladimirPoliak/VladimirPoliak.github.io">GitHub Contact</a>
+                    <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="linkedin" href="https://linkedin.com/in/vladimir-p-b315331aa/">LinkedIn Contact</a>
+                    <a onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="form" href="form.html">Contact Form</a>
+                </div>
+                <a class="navItem" onmouseover="mouseOver(id)" onmouseout="mouseOut(id)" id="home" href="index.html">Home</a>
+                <a class="navItem" onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="awards" href="awards_achivements.html">Awards/Achievements</a>
+                <a class="navItem" onmouseover= "mouseOver(id)" onmouseout="mouseOut(id)" id="courses" href="courses.html">Courses</a>
+            </nav>
+        </div>
+        <br>
+        <hr>  
+        <h1>Vladimir Poliak's Website For ITM780 Lab 6</h1>
         <hr>
         <h2>Contact Form</h2>
-        <form onsubmit="formSubmission()"> <!--Must have radio buttons, check boxes, single text field and multiple text field.-->
+        <!--This "onsubmit" event runs the "formSubmission" function upon the "Submit" button being clicked.-->
+        <form onsubmit="formSubmission()"> 
             <h4>Please Enter Your Name:</h4>
             <!--This provides a field for the user to enter their name and last name.-->
             <input id="fName" type="text" value="ABC"> Please Enter Your First Name
@@ -23,7 +42,7 @@
             <br>
             <h4>Please Select Your Email:</h4>
             <!--This provides a field for the user to enter their email with a special type.-->
-            <input id="email" type="email" value="ABC"> Please Enter Your Email
+            <input id="email" type="email" value="ABC@ABC"> Please Enter Your Email
             <h4>Please Select Your Role:</h4>
             <!--This provides a set of radio buttons letting the user select which type of employee they are with "other employee..." being the default-->
             <input type="radio" name="choice" value="Recruiting (Manager)"> Recruiting (Manager)
@@ -35,7 +54,7 @@
             <input type="radio" name="choice" value="Other Employee (With Hiring Repsponsibility)"checked> Other Employee (With Hiring Repsponsibility)
             <br>
             <h4>Please Select Your Provience:</h4>
-            <!--This allows people to select a province they are from a drop down selection.-->
+            <!--This allows people to select a province they are from a drop down selection menu with there being 13 options.-->
             <select name="province">
                 <option value="Ontario">Ontario</option>
                 <option value="Quebec">Quebec</option>
@@ -53,7 +72,7 @@
             </select>
             <br>
             <h4>Please Select All That Apply:</h4>
-            <!--This allows people to select all the checkboxes for the opiinions they agree with.-->
+            <!--This allows people to select all the checkboxes for the opinions they agree with with "none" being the default option.-->
             <input type="checkbox" name="opinions" value="None" checked>None <br>
             <input type="checkbox" name="opinions" value="I Often See Personal Portfolio Websites" >I Often See Personal Portfolio Websites <br>
             <input type="checkbox" name="opinions" value="I Looked at Your Resume Before Your Personal Portfolio Website" >I Looked at Your Resume Before Your Personal Portfolio Website <br>
@@ -61,17 +80,19 @@
             <input type="checkbox" name="opinions" value="I Think The Personal Portfolio Website Needs Improvement" >I Think The Personal Portfolio Website Needs Improvement <br>
             <input type="checkbox" name="opinions" value="I Think This Website Will Likely Get an Interview" >I Think This Website Will Likely Get an Interview <br>
             <br>
-            <!--This provides a color selection tool for the user to select their favorite color.-->
             <h4>Please Select All That Apply:</h4>
+            <!--This provides a color selection tool for the user to select their favorite color.-->
             <input id="color" type="color" value="#ffffff"> Please Select Your Favorite Color
             <br>
             <h4>Please Enter Your Feedback Regarding the Website :</h4>
+            <!--This provies a text box that is 5 rows in hight by 23 columns in width where they can type larger amounts of text,
+            a scroll bar appears if the text goes beyong the box.-->
             <textarea id="feedback" rows="5" cols="23" value="abc">Please Write Feedback Here</textarea>
-            <!--This allows the user to reset the form.-->
+            <!--This allows the user to reset the form with all default values.-->
             <input type="reset">
-            <!--This allows the user to submit the form.-->
+            <!--This allows the user to submit the form which runs the "formSubmission" function.-->
             <input type="submit">
-            <!--This allows the user to cancel the form and go back to the home page.-->
+            <!--This allows the user to cancel the form and go back to the home page instead of scrolling up to the navigation menu.-->
             <input type="button" onclick=formCancel() value="Cancel Form/Back to Home Page">
             <input type="button" onclick=showResults() value="Show User Input">
         </form>
