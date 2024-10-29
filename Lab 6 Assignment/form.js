@@ -36,7 +36,7 @@ function formSubmission(){
     localStorage.setItem("feedback", document.getElementById("feedback").value);
 }
 
-//This function shows all user entered values in the console and in alert box for easier debugging.
+//This function shows all user-entered values in the console and in the alert box for easier debugging.
 function showResults() {
     //The below shows all the user entered values in the console.
     console.log(localStorage.getItem("firstName"));
@@ -47,7 +47,7 @@ function showResults() {
     console.log(localStorage.getItem("opinions"));
     console.log(localStorage.getItem("color"));
     console.log(localStorage.getItem("feedback"));
-    /* This code can be enabled to show an alrt box with all the user eneted values instead of using the consol.
+    /* This code can be enabled to show an alert box with all the user-entered values instead of using the console.
     alert("First Name:"+(localStorage.getItem("firstName")) + "\n" + "Last Name:" + localStorage.getItem("lastName") + "\n" +
     "Email:" + localStorage.getItem("email") + "\n" + "User Job:" + localStorage.getItem("choice") + "\n" + "Residence:" +
     localStorage.getItem("province") + "\n" + "User Opinions:" + localStorage.getItem("opinions") + "\n" + "Favorite Color:" +
