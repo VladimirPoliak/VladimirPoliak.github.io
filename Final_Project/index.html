@@ -26,38 +26,41 @@
             <!--Each of these elements is positioned evenly with each link button being rounded.-->
             <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Home
+            xl:px-2 xl:text-xl">Home
             </a> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
             <a href="#Work_Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Work Experience
-            </button>
+            xl:px-2 xl:text-xl">Work Experience
+            </a>
             <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Qualifications
-            </button>
+            xl:px-2 xl:text-xl">Qualifications
+            </a>
             <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Projects
-            </button>
+            xl:px-2 xl:text-xl">Projects
+            </a>
             <a href="#Micro-credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Micro-credentials
-            </button>
+            xl:px-2 xl:text-xl">Micro-credentials
+            </a>
             <a href="#Personal_Achivements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Personal Achivements
-            </button>
+            xl:px-2 xl:text-xl">Personal Achivements
+            </a>
             <!--The button style was copied for the link to my contact information.-->
             <a href="https://linkedin.com/in/vladimir-p-b315331aa/" 
-            class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">Linkedin
+            xl:px-2 xl:text-xl">
+                <img src="Images/Linkeidn.webp" class="h-[15%] w-[15%] inline-block w-0"> <!--https://www.iconfinder.com/icons/317750/linkedin_icon-->
+                Linkedin
             </a>
             <!--The button style was copied for my email.-->
-            <p class="shrink float-right bg-yellow-300 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            <p class="shrink float-right bg-yellow-300 text-black rounded-full px-4 font-mono text-center inline-block mx-auto w-1/4 text-xs 
             md:text-sm
-            xl:px-2 xl:text-2xl">
+            xl:px-2 xl:text-xl">
+                <img src="Images/Gmail.png" class="h-[5%] w-[5%] inline-block w-0">
                 Vladimir.Poliak@torontomu.ca
             </p>
         </nav>
@@ -284,32 +287,60 @@
                         <li>
                             An example of my past Co-op experience is when I participated in a team of full-time employees to deploy new software to all computers in the organization. It required issue resolution through ServiceNow to ensure any problems people experienced with the newly deployed software could be solved in a timely manner. Additionally, knowledge documentation had to be created in relation to the new software, so other technicians would be able to quickly find solutions to common problems.
                         </li>
-                        <li class="text-center">
+                        <li class="text-center hover:relative">
                             <p class="font-sharetech my-4 text-sm
                             xl:text-xl">
                                 Worked in a Group to Create a Network Diagram for a Office
                             </p>
-                            <img id="img1" onmouseover="enlarge(id)" onmouseout="shrink(id)" class="h-48 w-64 inline-block" src="Images/Floor 1.png"></img>
-                            <img id="img2" onmouseover="enlarge(id)" onmouseout="shrink(id)" class="h-48 w-64 inline-block" src="Images/Floor 2.png"></img>
-                            <img id="img3" onmouseover="enlarge(id)" onmouseout="shrink(id)" class="h-48 w-64 inline-block" src="Images/Floor 3.png"></img>
-                            <img id="img4" onmouseover="enlarge(id)" onmouseout="shrink(id)" class="h-48 w-64 inline-block" src="Images/Floor 4.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-0 hover:w-[60%] hover:h-[200%]" src="Images/Floor 1.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-0 hover:w-[60%] hover:h-[200%]" src="Images/Floor 2.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-0 hover:w-[60%] hover:h-[200%]" src="Images/Floor 3.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-0 hover:w-[60%] hover:h-[200%]" src="Images/Floor 4.png"></img>
                         </li>
-                        <li class="text-center">
+                        <li class="text-center hover:relative">
                             <p class="font-sharetech my-4 text-sm
                             xl:text-xl">
                                 Individually Made Archimate Layer Diagrams for the Process of Buying Products
                             </p>
-                            <img id="clickable" class="h-48 w-64 inline-block" src="Images/Application Layer Archimate.png"></img>
-                            <img id="clickable" class="h-48 w-64 inline-block" src="Images/Business Layer Archimate.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-x-0 top-0 h-16 hover:w-[60%] hover:h-[150%]" src="Images/Application Layer Archimate.png"></img>
+                            <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-x-0 top-0 h-16 hover:w-[60%] hover:h-[150%]" src="Images/Business Layer Archimate.png"></img>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div id="Micro-credentials" class="min-w-full">
-                <h2 class="font-sharetech flex justify-center text-xl
-                xl:text-3xl">Micro-credentials</h2>
+                <div>
+                    <h2 class="font-sharetech flex justify-center text-xl
+                    xl:text-3xl">Micro-credentials</h2>
+                </div>
+
+                <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                    <ul class="font-sharetech text-center my-4 text-sm
+                        xl:text-4xl">
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/df516b75-5f5c-42f8-b3e8-30ad9fee894c#gs.gtsumm">SQL 2.0</a>
+                        </li>
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/a3de4ebc-c5ac-4cb5-b2a7-bb295d0f4174#gs.gtswde">Python 2.0</a>
+                        </li>
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/21ea7562-6d53-4e0b-9816-6c5d459bd28f#gs.gtswq6">Tableau 2.0</a>
+                        </li>
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/edc40d85-363e-4250-8242-9a8424d7ea8e#gs.gtsx56">Power BI 2.0</a>
+                        </li>
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/ab1d9b48-9790-4f5e-a12d-0049941d2d1f#gs.gtsxkm">Power of Excel Business Fundamentals 2.0</a>
+                        </li>
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/e37434fa-776f-4861-9290-ca46b78eb09f#gs.gtsxn1">R 2.0</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            
             <!--This specifies that the specific div should fill out the entire screen.-->
             <div id="Personal_Achivements" class="min-w-full">
                 <div>
@@ -317,9 +348,9 @@
                     xl:text-3xl">Personal Achivements</h2>
                 </div>
 
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
-                    <ul class="font-sharetech text-center justify-center text-sm mx-0
-                    xl:text-3xl">
+                <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                    <ul class="font-sharetech text-center my-4 text-sm
+                        xl:text-3xl">
                         <li>
                             Evelina J. Thompson Co-op Excellence Award, TMU
                             <br>
@@ -366,18 +397,6 @@
                             2021
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="min-w-full">
-                <div>
-                    <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-3xl">Contact</h2>
-                </div>
-
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 md:flex-row
-                sm:mx-14
-                xl:mx-32">
-                    Links to contact information and form to fill out to send an email.
                 </div>
             </div>
         </div>
