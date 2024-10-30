@@ -3,16 +3,16 @@ function formCancel(){
     window.location.href = "index.html";
 }
 
-//This function stores all the user entred form values in local storage in the browser.
+//This function stores all the user entered form values in local storage in the browser.
 function formSubmission(){
     /* The below 3 items take the values from the elemets with fName, lName and email id's and puts them in local storage.
     https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/*/
     localStorage.setItem("firstName", document.getElementById("fName").value);
     localStorage.setItem("lastName", document.getElementById("lName").value);
     localStorage.setItem("email", document.getElementById("email").value);
-    /* The below 3 items take the results from the elemets with choice, province and opinions names 
-    and transforms them into lists before using the index to retrive the value and puts them in local storage.
-    This is because otherwise the form elemments return an Object List with a null value.*/
+    /* The below 3 items take the results from the elements with choice, province and opinions names 
+    and transform them into lists before using the index to retrieve the value and put them in local storage.
+    This is because otherwise, the form elements return an Object List with a null value.*/
     var choiceList=document.getElementsByName("choice"); //Assigns the output of the choice name to choiceList variable.
     for (i = 0; i < choiceList.length; i++) { //Goes through every element in the choiceLis.
         if (choiceList[i].checked) { //Checks if the element has been checked.
@@ -31,7 +31,7 @@ function formSubmission(){
         }
     }
     localStorage.setItem("opinions", opinions); //Stores the opinions list in local storage.
-    /* The below 2 items take the values from the elemets with color and feedback id's and puts them in local storage.*/
+    /* The below 2 items take the values from the elements with color and feedback id's and puts them in local storage.*/
     localStorage.setItem("color", document.getElementById("color").value);
     localStorage.setItem("feedback", document.getElementById("feedback").value);
 }
