@@ -10,11 +10,11 @@
         <meta charset="utf-8">
     </head>
 
-    <!--The submit button activates the "onsubmit" event which triggers the "formSubmission" function in the form.js file.
-    The clear button runs a built in event handler that resets all of the input fields to their default values.
-    The formSubmission function retreives all of the form input using id's and names when necessary such as with the radio buttons, check boxes and dropdown selection.
-    Afterwards it stores all the information into local storage in the browser, allowing the user to click a button to "Show User Input" in the consol.
-    For input element ssuch as radio buttons, check boxes and dropdown selection, the data first has to be convered into vairables that are readable using for loops.-->
+    <!--The submit button activates the "onsubmit" event, which triggers the "formSubmission" function in the form.js file.
+    The clear button runs a built-in event handler that resets all of the input fields to their default values.
+    The formSubmission function retrieves all of the form input using id's and names when necessary, such as with the radio buttons, checkboxes and dropdown selection.
+    Afterwards, it stores all the information in local storage in the browser, allowing the user to click a "Show User Input" button in the console.
+    For input elements such as radio buttons, checkboxes and dropdown selection, the data first has to be converted into readable variables using for loops.-->
 
     <body>
         <!-- These nav tags are used to create a navigation bar with 5 elements sperated by columns, 3 of the elements directly link to various website pages, while
@@ -47,11 +47,11 @@
             <input id="lName" type="text" value="ABC"> Please Enter Your Last Name
             <br>
             <h4>Please Select Your Email:</h4>
-            <!--This provides a field for the user to enter their email with a special type.-->
+            <!--This provides a field for users to enter their email with a special type.-->
             <input id="email" type="email" value="ABC@ABC"> Please Enter Your Email
             <h4>Please Select Your Role:</h4>
             <div class="formQuestions">
-                <!--This provides a set of radio buttons letting the user select which type of employee they are with "other employee..." being the default-->
+                <!--This provides a set of radio buttons letting the user select which type of employee they are, with "other employee..." being the default-->
                 <input type="radio" name="choice" value="Recruiting (Manager)"> Recruiting (Manager)
                 <br>
                 <input type="radio" name="choice" value="Recruiter (Non Manager)"> Recruiter (Non Manager)
@@ -62,7 +62,7 @@
             </div>
             <br>
             <h4>Please Select Your Provience:</h4>
-            <!--This allows people to select a province they are from a drop down selection menu with there being 13 options.-->
+            <!--This allows people to select a province they are from a drop-down selection menu with there being 13 options.-->
             <select name="province">
                 <option value="Ontario">Ontario</option>
                 <option value="Quebec">Quebec</option>
@@ -81,7 +81,7 @@
             <br>
             <h4>Please Select All That Apply:</h4>
             <div class="formQuestions">
-                <!--This allows people to select all the checkboxes for the opinions they agree with with "none" being the default option.-->
+                <!--This allows people to select all the checkboxes for the opinions they agree with, with "none" being the default option.-->
                 <input type="checkbox" name="opinions" value="None" checked>None <br>
                 <input type="checkbox" name="opinions" value="I Often See Personal Portfolio Websites" >I Often See Personal Portfolio Websites <br>
                 <input type="checkbox" name="opinions" value="I Looked at Your Resume Before Your Personal Portfolio Website" >I Looked at Your Resume Before Your Personal Portfolio Website <br>
@@ -91,19 +91,19 @@
             </div>
             <br>
             <h4>Please Select All That Apply:</h4>
-            <!--This provides a color selection tool for the user to select their favorite color.-->
+            <!--This provides a colour selection tool for the user to select their favourite colour.-->
             <input id="color" type="color" value="#ffffff"> Please Select Your Favorite Color
             <br>
-            <h4>Please Enter Your Feedback Regarding the Website :</h4>
-            <!--This provies a text box that is 5 rows in hight by 23 columns in width where they can type larger amounts of text,
-            a scroll bar appears if the text goes beyong the box.-->
+            <h4>Please Enter Your Feedback Regarding the Website:</h4>
+            <!--This provides a text box that is 5 rows in height by 23 columns in width where they can type larger amounts of text,
+            a scroll bar appears if the text goes beyond the box.-->
             <textarea id="feedback" rows="5" cols="23" value="abc">Please Write Feedback Here</textarea>
             <br>
             <!--This allows the user to reset the form with all default values.-->
             <input type="reset" value="Clear">
-            <!--This allows the user to submit the form which runs the "formSubmission" function.-->
+            <!--This allows the user to submit the form, which runs the "formSubmission" function.-->
             <input type="submit">
-            <!--This allows the user to cancel the form and go back to the home page instead of scrolling up to the navigation menu.-->
+            <!--This allows the user to cancel the form and return to the home page instead of scrolling up to the navigation menu.-->
             <input type="button" onclick=formCancel() value="Cancel Form/Back to Home Page">
             <input type="button" onclick=showResults() value="Show User Input in Console">
         </form>
