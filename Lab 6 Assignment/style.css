@@ -143,7 +143,7 @@ h4 {
 }
 
 /* Defines the style for the form content. */
-#form {
+#formContent {
     display: block;
     margin-right: auto;
     margin-left: auto;
