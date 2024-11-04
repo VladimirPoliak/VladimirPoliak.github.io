@@ -10,11 +10,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="main.js"></script>
         <link href="tailwind.css" rel="stylesheet">
-        <div>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
-        </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
     </head>
 
     <body class="bg-gray-950 text-white">
@@ -60,14 +58,15 @@
             </a>
             <!--The button style was copied for my email.-->
             <p class="shrink float-right bg-yellow-300 text-black rounded-full px-4 font-mono text-center hidden mx-auto w-1/4 text-xs 
-            lg:text-sm lg:inline-block
+            xl:text-sm xl:inline-block
             xl:px-2 xl:text-xl">
                 <img src="Images/Gmail.png" class="h-[5%] w-[5%] hidden w-0
                 2xl:inline-block"> <!--https://www.flaticon.com/free-icon/gmail_281769-->
                 Vladimir.Poliak@torontomu.ca
             </p>
         </nav>
-        <!--This specifies that all elememnts in the div fill out the entire screen.-->
+        <!--This specifies that all elememnts in the div fill out the entire screen.
+        It encapsulates all of the content of the "home" page.-->
         <div id="Home" class="flex pt-20 text-white
         sm:space-x-24
         md:pt-10
@@ -76,6 +75,7 @@
             <div class="min-w-full relative">
                 <div class="flex justify-center">
                     <div>
+                        <!--This specifies that the specific styling for the title and the update date.-->
                         <h1 class="font-sharetech text-center text-3xl
                         xl:text-7xl">
                             Vladimir Poliak's Personal Portfolio Wesbite
@@ -86,7 +86,7 @@
                         </h6>
                     </div>
                 </div>
-                
+                <!--This positions the introduction and its text in the middle of the screen and applies styling.-->
                 <div class="flex items-center mx-80 rounded-md bg-blue-400 p-3 md:flex-row"> <!--https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
                     <div>
                         <h2 class="font-sharetech text-center my-4 text-sm
@@ -103,6 +103,7 @@
                     </div>
                 </div>
 
+                <!--This creats a small horizontal table with the names of the work experience.-->
                 <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row md: mx-40">
                     <div>
                         <h2 class="font-sharetech text-center my-4 text-sm 
@@ -156,7 +157,7 @@
                             <li>
                                 Created two+ business process diagrams monthly by paying attention to detail and outlining every business process step in a use case that was used for process automation.
                             </li>
-                            <li class="hidden">
+                            <li class="hidden xl:block">
                                 Participated in three+ meetings daily, taking detailed meeting notes when necessary to ensure all required information was identified using active listening and communication.
                             </li>
                             <li class="hidden xl:block">
