@@ -69,7 +69,7 @@ a:active {
     padding-right: 20px;
 }
 
-/* Defines style for the pipcture. */
+/* Defines style for the picture. */
 #selfPicture {
     width: 5%;
     height: 5%;
@@ -96,7 +96,7 @@ nav {
     border-width: thick;
 }
 
-/* Defines positioning and style for drop down menu.*/
+/* Defines positioning and style for drop-down menu.*/
 .content {
     display: none;
     position: absolute;
@@ -134,7 +134,7 @@ h4 {
     font-size: 140%;
 }
 
-/* Defins the style of the checkboxes and radio buttons.*/
+/* Defines the style of the checkboxes and radio buttons.*/
 .formQuestions {
     margin-right: 25%;
     margin-left: 25%;

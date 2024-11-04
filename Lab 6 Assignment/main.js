@@ -7,14 +7,14 @@ function nameButton() {
     return name
 }
 
-/* This function takes the name variable as a paramater, gets the name element before 
-getting the element with the "nameChange" tag from the HTML document and changing the text and adding the name. */
+/* This function takes the name variable as a parameter and gets the name element before 
+getting the element with the "nameChange" tag from the HTML document, changing the text and adding the name. */
 function textChange(name) {
     document.getElementById("nameChange").innerHTML = "Hello there  " + name;
 }
 
 /* This function styles the HTML element with the "nameChange" tag with 
-multiple styles after assignment the element form the HTML document to a variable. */
+multiple styles after assigning the element from the HTML document to a variable. */
 function elementChange() {
     var firstElement = document.getElementById("nameChange");
     firstElement.style.color = "red";
@@ -35,8 +35,8 @@ function dropDownFunciton() {
 }
 
 /* When clicking anywhere on the website besides the menu button, the event is detected as not pressing the menu button, so the
-content is grabbed in a variable and then it toggles the "show" condition from all of the variables in the menu making them disappear.
-Followed ITM780 Lab 5 Instructions to achive.*/
+content is grabbed in a variable, and then it toggles the "show" condition from all of the variables in the menu, making them disappear.
+Followed ITM780 Lab 5 Instructions to achieve.*/
 window.onclick = function(event) {
     if (!event.target.matches('.menuButton')) {
         var menuContent = document.getElementsByClassName("content");
