@@ -1,0 +1,48 @@
+body {
+    font-family: Arial;
+    font-size: 12pt;
+    background-color: #d1d0a9;
+    color: #bf8888;
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+
+/* Defines positioning and style for drop-down menu.*/
+.content {
+    display: none;
+    position: absolute;
+    background-color: #69b6b3;
+}
+
+/* Defines style for the navigation bar items*/
+.helpItem, .menuButton {
+    border:solid; 
+    border-width: thin;
+    background-color: white;
+    font-size: 25px;
+}
+
+/* Makes dropdown menu visible.*/
+.show {
+    display: block;
+}
+
+.Row {
+    display: table-row;
+}
+
+.Table {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.multimedia {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
