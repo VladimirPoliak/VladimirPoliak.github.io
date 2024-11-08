@@ -1,11 +1,15 @@
 function enlarge() {
-    var enlargableText = document.querySelectorAll("h1, h2, h3, h4, h5, h6, li, p, a");
+    var enlargableText = document.querySelectorAll("h1, h2, h3, h4, h5, h6, li, p");
     for(var i = 0; i < enlargableText.length; i++){
         enlargableText[i].style.fontSize = "200%";
     }
-    var enlargableText = document.getElementsByClassName("helpItem");
+    enlargableText = document.getElementsByClassName("helpItem");
     for(var i = 0; i < enlargableText.length; i++){    
         enlargableText[i].style.fontSize = "200%";
+    }
+    enlargableText = document.getElementsByTagName("a");
+    for(var i = 0; i < enlargableText.length; i++){
+        enlargableText[i].style.fontSize = "100%";
     }
 }
 
@@ -14,7 +18,7 @@ function ensmall() {
     for(var i = 0; i < enshrinkableText.length; i++){
         enshrinkableText[i].style.fontSize = null;
     }
-    var enshrinkableText = document.getElementsByClassName("helpItem");
+    enshrinkableText = document.getElementsByClassName("helpItem");
     for(var i = 0; i < enshrinkableText.length; i++){
         enshrinkableText[i].style.fontSize = null;
     }
@@ -23,27 +27,27 @@ function ensmall() {
 function maxContrast() {
     document.body.style.backgroundColor = "blue";
     document.body.style.color = "red";
-    document.querySelector("a").style.color = "orange";
-    var maxContrast = document.getElementsByClassName("menuButton");
-    maxContrast[0].style.backgroundColor = "orange";
-    maxContrast[0].style.color = "purple";
-    maxContrast = document.getElementsByClassName("helpItem");
+    var maxContrast = document.getElementsByClassName("helpItem menuButton");
     for(var i = 0; i < maxContrast.length; i++){
         maxContrast[i].style.backgroundColor = "orange";
         maxContrast[i].style.color = "purple";
+    }
+    maxContrast = document.getElementsByTagName("a");
+    for(var i = 0; i < maxContrast.length; i++){
+        maxContrast[i].style.color = "orange";
     }
 }
 
 function normalContrast() {
     document.body.style.backgroundColor = null;
     document.body.style.color = null;
-    document.querySelector("a").style.color = null;
-    var normalContrast= document.getElementsByClassName("menuButton");
-    normalContrast[0].style.backgroundColor = null;
-    normalContrast[0].style.color = null;
-    normalContrast = document.getElementsByClassName("helpItem");
+    var normalContrast = document.getElementsByClassName("helpItem menuButton");
     for(var i = 0; i < normalContrast.length; i++){
         normalContrast[i].style.backgroundColor = null;
+        normalContrast[i].style.color = null;
+    }
+    normalContrast = document.getElementsByTagName("a");
+    for(var i = 0; i < normalContrast.length; i++){
         normalContrast[i].style.color = null;
     }
 }
