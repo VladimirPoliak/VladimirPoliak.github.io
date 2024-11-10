@@ -1,3 +1,4 @@
+/* Defines the style for the body of the website.*/
 body {
     font-family: Arial;
     font-size: 12pt;
@@ -27,10 +28,12 @@ body {
     display: block;
 }
 
+/* Used to align accessibility menu in a table.*/
 .Row {
     display: table-row;
 }
 
+/* Defines the style of the accessibility menu buttons.*/
 .Table {
     display: table-cell;
     border: solid;
@@ -40,9 +43,30 @@ body {
     text-align: center;
 }
 
+/* Defines the style for the video and music player.*/
 .multimedia {
     display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+/* Defines style for the pictures. */
+.pictures {
+    width: 504px; /* 504px */
+    height: 378px; /* 378px */
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Defines the layout of the picture elements.*/
+.images {
+    display: flex;
+    text-align: center;
+}
+
+/* Hides the alt text when it does not need to be seen.*/
+#altImg1, #altImg2 {
+    display: none;
 }
