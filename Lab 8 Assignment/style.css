@@ -67,8 +67,6 @@ body {
 }
 
 /* Hides the alt text when it does not need to be seen.*/
-#altImg1, #altImg2 {
+#altImg1, #altImg2, #altImg3 {
     display: none;
 }
-
-/* text */
