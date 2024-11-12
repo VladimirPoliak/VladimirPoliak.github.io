@@ -70,3 +70,11 @@ body {
 #altImg1, #altImg2, #altImg3 {
     display: none;
 }
+
+.caption {
+    width: 504px; /* 504px */
+    height: 378px; /* 378px */
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
