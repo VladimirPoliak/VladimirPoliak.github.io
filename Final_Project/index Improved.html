@@ -13,41 +13,62 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     </head>
 
     <body class="bg-gray-950 text-white">
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <!--Ensures the nagivation bar stays at the top of the screen.
         It also ensures the navigation elements are evenly spaced out.-->
-        <nav class="flex shrink fixed w-full overflow-x-scroll py-2 mb-8
+        <nav class="flex shrink fixed w-full py-2 mb-8
         sm:flex-shrink
-        xl:overflow-hidden
         xl:flow-root">
-            <button class="menuButton" onclick="dropDownFunciton()">Contact Menu</button>
-            <!--Each of these elements is positioned evenly with each link button being rounded.-->
-            <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-xl">Home
-            </a> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
-            <a href="#Work_Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm
-            xl:px-2 xl:text-xl">Experience
-            </a>
-            <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm
-            xl:px-2 xl:text-xl">Qualifications
-            </a>
-            <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm
-            xl:px-2 xl:text-xl">Projects
-            </a>
-            <a href="#Micro-credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm
-            xl:px-2 xl:text-xl">Credentials
-            </a>
-            <a href="#Personal_Achivements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-            md:text-sm
-            xl:px-2 xl:text-xl">Achivements
-            </a>
+            xl:px-2 xl:text-xl" type="button">Dropdown button
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="hidden"> <!--https://flowbite.com/docs/components/dropdowns/-->
+                <ul class="bg-gray-700 rounded-lg" aria-labelledby="dropdownDefaultButton">
+                    <!--Each of these elements is positioned evenly with each link button being rounded.-->
+                    <li>
+                        <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Home
+                        </a> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
+                    </li>
+                    <li>
+                        <a href="#Work_Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Qualifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Micro-credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Credentials
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Personal_Achivements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        md:text-sm
+                        xl:px-2 xl:text-xl">Achivements
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!--The button style was copied for the link to my contact information.-->
             <a href="https://linkedin.com/in/vladimir-p-b315331aa/" 
             class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
@@ -66,6 +87,17 @@
                 Vladimir.Poliak@torontomu.ca
             </p>
         </nav>
+    
+
+        <!--Ensures the nagivation bar stays at the top of the screen.
+        It also ensures the navigation elements are evenly spaced out.-->
+        <nav class="flex shrink fixed w-full overflow-x-scroll py-2 mb-8
+        sm:flex-shrink
+        xl:overflow-hidden
+        xl:flow-root">
+
+
+        </nav>
         <!--This specifies that all elememnts in the div fill out the entire screen.
         It encapsulates all of the content of the "home" page.-->
         <div id="Home" class="flex pt-20 text-white
@@ -73,11 +105,11 @@
         md:pt-10
         xl:pt-14">
             <!--This specifies that the specific div should fill out the entire screen.-->
-            <div class="min-w-full relative">
+            <div class="min-w-full">
                 <div class="flex justify-center">
                     <div>
                         <!--This specifies that the specific styling for the title and the update date.-->
-                        <h1 class="font-sharetech text-center text-3xl
+                        <h1 class="font-sharetech flex justify-center text-xl
                         xl:text-7xl">
                             Vladimir Poliak's Personal Portfolio Wesbite
                         </h1>
@@ -90,8 +122,8 @@
                 <!--This positions the introduction and its text in the middle of the screen and applies styling.-->
                 <div class="flex items-center mx-80 rounded-md bg-blue-400 p-3 md:flex-row"> <!--https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
                     <div>
-                        <h2 class="font-sharetech text-center my-4 text-sm
-                        xl:text-3xl">Introduciton</h2>
+                        <h2 class="font-sharetech flex justify-center text-xl
+                        xl:text-4xl">Introduciton</h2>
                         <p class="font-sharetech text-center flex justify-center text-xs mx-0
                         xl:text-xl
                         2xl:text-3xl">
