@@ -28,7 +28,7 @@ body {
     display: block;
 }
 
-/* Used to align accessibility menu in a table.*/
+/* Used to align the accessibility menu in a table.*/
 .Row {
     display: table-row;
 }
@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-/* Defines the style for the video and music player.*/
+/* Defines the style of the video and music player.*/
 .multimedia {
     display: block;
     margin-right: auto;
