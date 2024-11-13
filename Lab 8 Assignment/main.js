@@ -1,11 +1,11 @@
-/* When clickinkg on the "Text Enlarge Button" all of the styling for the text size is set for all of the text elements in the document,
+/* When clicking on the "Text Enlarge Button" all of the styling for the text size is set for all of the text elements in the document,
  the different accessibility buttons and the links. All the text and links are increased to the same size*/
 function enlarge() {
     var enlargableText = document.querySelectorAll("h1, h2, h3, h4, h5, h6, li, p, figcaption"); // This for loop is necessary to enlarge all the text elements.
     for(var i = 0; i < enlargableText.length; i++){
         enlargableText[i].style.fontSize = "200%";
     }
-    enlargableText = document.getElementsByClassName("menuButton") // This button needs to be enlarged seperately because it has a different class name.
+    enlargableText = document.getElementsByClassName("menuButton") // This button needs to be enlarged separately because it has a different class name.
     enlargableText[0].style.fontSize = "200%";
     enlargableText = document.getElementsByClassName("helpItem"); // This for loop is necessary to enlarge all the buttons.
     for(var i = 0; i < enlargableText.length; i++){    
@@ -17,10 +17,10 @@ function enlarge() {
     }
 }
 
-/* When clickinkg on the "Normal Text Button" all of the styling for the text size is removed for all of the text elements in the document,
+/* When clicking on the "Normal Text Button" all of the styling for the text size is removed for all of the text elements in the document,
  the different accessibility buttons and the links. All the text and links are decreased to the original size.*/
 function ensmall() {
-    var enshrinkableText = document.getElementsByClassName("menuButton") // This button needs to be shrunk seperately because it has a different class name.
+    var enshrinkableText = document.getElementsByClassName("menuButton") // This button needs to be shrunk separately because it has a different class name.
     enshrinkableText[0].style.fontSize = null;
     enshrinkableText = document.querySelectorAll("h1, h2, h3, h4, h5, h6, li, p, a, figcaption"); // This for loop is necessary to shrink all the text elements.
     for(var i = 0; i < enshrinkableText.length; i++){ 
@@ -32,8 +32,8 @@ function ensmall() {
     }
 }
 
-/* When clickinkg on the "Contrast Button" all of the styling for the contrast is set for the body of the document,
- the different accessibility buttons and the links. The specific contrast styles were chosen from the Lab 8 Accessability slideshow.*/
+/* When clicking on the "Contrast Button" all of the styling for the contrast is set for the document's body,
+ the different accessibility buttons and the links. The specific contrast styles were chosen from the Lab 8 Accessibility slideshow.*/
 function maxContrast() {
     document.body.style.backgroundColor = "blue";
     document.body.style.color = "red";
@@ -51,12 +51,12 @@ function maxContrast() {
     }
 }
 
-/* When clickinkg on the "Normal Contrast Button" all of the styling for the contrast is removed from the body of the document,
+/* When clicking on the "Normal Contrast Button" all of the styling for the contrast is removed from the document's body,
  the different accessibility buttons and the links. All the text and links are reverted to the original style.*/
 function normalContrast() {
     document.body.style.backgroundColor = null;
     document.body.style.color = null;
-    var normalContrast = document.getElementsByClassName("menuButton") // This button needs its style reset seperately because it has a different class name.
+    var normalContrast = document.getElementsByClassName("menuButton") // This button needs its style reset separately because it has a different class name.
     normalContrast[0].style.backgroundColor = null;
     normalContrast[0].style.color = null;
     normalContrast = document.getElementsByClassName("helpItem"); // This for loop is necessary to reset the style of all the buttons.
@@ -90,13 +90,13 @@ window.onclick = function(event) {
     }
 }
 
-// This function shows the contents of the element with the ID that is passed to the function by assigning it a display block style.
+// This function shows the element's contents with the ID passed to the function by assigning it a display block style.
 function altDisplay (id) {
     alttext = document.getElementById(id);
     alttext.style.display = "block";
 }
 
-// This function hides the contents of the element with the ID that is passed to the function by assigning it a null display style, reverting it to its default style.
+// This function hides the element's contents with the ID passed to the function by assigning it a null display style, reverting it to its default style.
 function altHide (id) {
     alttext = document.getElementById(id);
     alttext.style.display = null;
