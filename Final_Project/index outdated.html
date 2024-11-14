@@ -13,81 +13,58 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     </head>
 
     <body class="bg-gray-950 text-white">
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <!--Ensures the nagivation bar stays at the top of the screen.
         It also ensures the navigation elements are evenly spaced out.-->
-        <nav class="flex shrink fixed w-full py-2 mb-8
+        <nav class="flex shrink fixed w-full overflow-x-scroll py-2 mb-8
         sm:flex-shrink
+        xl:overflow-hidden
         xl:flow-root">
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            <!--Each of these elements is positioned evenly with each link button being rounded.-->
+            <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
             md:text-sm
-            xl:px-2 xl:text-xl" type="button">Navigation Menu
-            </button>
-            <!-- Dropdown menu will be elaborated -->
-             
-            <div id="dropdown" class="hidden"> <!--https://flowbite.com/docs/components/dropdowns/-->
-                <ul class="bg-gray-700 rounded-lg" aria-labelledby="dropdownDefaultButton">
-                    <!--Each of these elements is positioned evenly with each link button being rounded.-->
-                    <li>
-                        <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Home
-                        </a> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
-                    </li>
-                    <li>
-                        <a href="#Work_Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Experience
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Qualifications
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Micro-credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Credentials
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Personal_Achivements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
-                        md:text-sm
-                        xl:px-2 xl:text-xl">Achivements
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            xl:px-2 xl:text-xl">Home
+            </a> <!--https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
+            <a href="#Work_Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-xl">Experience
+            </a>
+            <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-xl">Qualifications
+            </a>
+            <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-xl">Projects
+            </a>
+            <a href="#Micro-credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-xl">Credentials
+            </a>
+            <a href="#Personal_Achivements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            md:text-sm
+            xl:px-2 xl:text-xl">Achivements
+            </a>
             <!--The button style was copied for the link to my contact information.-->
-            <button onclick="confirmation('https://linkedin.com/in/vladimir-p-b315331aa/')" class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
+            <a href="https://linkedin.com/in/vladimir-p-b315331aa/" 
+            class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
             md:text-sm
             xl:px-2 xl:text-xl">
                 <img src="Images/Linkeidn.webp" class="h-[15%] w-[15%] hidden w-0
                 2xl:inline-block"> <!--https://www.iconfinder.com/icons/317750/linkedin_icon-->
                 Linkedin
-            </button>
+            </a>
             <!--The button style was copied for my email.-->
-            <button onclick="confirmation('mailto:Vladimir.Poliak@torontomu.ca')" class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto w-1/4 text-xs 
+            <p class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
             md:text-sm
             xl:px-2 xl:text-xl">
                 <img src="Images/Gmail.png" class="h-[5%] w-[5%] hidden w-0
                 2xl:inline-block"> <!--https://www.flaticon.com/free-icon/gmail_281769-->
-                Vladimir.Poliak@torontomu.ca<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto-->
-            </button>
+                Vladimir.Poliak@torontomu.ca
+            </p>
         </nav>
-    
         <!--This specifies that all elememnts in the div fill out the entire screen.
         It encapsulates all of the content of the "home" page.-->
         <div id="Home" class="flex pt-20 text-white
@@ -95,11 +72,11 @@
         md:pt-10
         xl:pt-14">
             <!--This specifies that the specific div should fill out the entire screen.-->
-            <div class="min-w-full">
+            <div class="min-w-full relative">
                 <div class="flex justify-center">
                     <div>
                         <!--This specifies that the specific styling for the title and the update date.-->
-                        <h1 class="font-sharetech flex justify-center text-xl
+                        <h1 class="font-sharetech text-center text-3xl
                         xl:text-7xl">
                             Vladimir Poliak's Personal Portfolio Wesbite
                         </h1>
@@ -112,8 +89,8 @@
                 <!--This positions the introduction and its text in the middle of the screen and applies styling.-->
                 <div class="flex items-center mx-80 rounded-md bg-blue-400 p-3 md:flex-row"> <!--https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
                     <div>
-                        <h2 class="font-sharetech flex justify-center text-xl
-                        xl:text-4xl">Introduciton</h2>
+                        <h2 class="font-sharetech text-center my-4 text-sm
+                        xl:text-3xl">Introduciton</h2>
                         <p class="font-sharetech text-center flex justify-center text-xs mx-0
                         xl:text-xl
                         2xl:text-3xl">
@@ -162,18 +139,7 @@
                         </ul>
                     </div>
                 </div>
-                
-                <button data-tooltip-target="tooltip-default" type="button" class="flex items-center mt-16 mx-auto"> <!--https://flowbite.com/docs/components/tooltips/-->
-                    <img class="w-[5%] h-[5%] flex items-center mt-10 mx-auto animate-bounce" src="Images/Arrow Right.png"> <!--https://pixabay.com/vectors/arrow-right-shape-sign-symbol-25832/-->
-                    <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 transition-opacity rounded-lg bg-yellow-300 text-black rounded-lg"">
-                        This Website Scrolls to the Right
-                        <div class="tooltip-arrow" data-popper-arrow></div>
-                    </div>
-                </button>
-
-                
             </div>
-
             
             <!--This specifies that the specific div should fill out the entire screen.-->
             <div id="Work_Exprience" class="min-w-full">
@@ -190,11 +156,10 @@
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
                     md:max-w-48
                     2xl:text-xl 2xl:max-w-64">
-                        
                         IT Rotational Co-op, Workplace Safety and Insurance Board
                         <br>
                         May 2023 - Present
-                        <ul class="font-sharetech text-xs list-disc bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc
                         xl:text-md
                         2xl:text-xl">
                             <li>
@@ -219,7 +184,7 @@
                         Deputy Returning Officer (Computer), Elections Ontario
                         <br>
                         June 2022
-                        <ul class="font-sharetech text-xs list-disc hidden bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc hidden
                         2xl:text-xl 2xl:block">
                             <li>
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
@@ -240,7 +205,7 @@
                         IT Technologist, Primary Support Systems (COVID-19 Interrupted)
                         <br>
                         February 2020 - March 2020
-                        <ul class="font-sharetech text-xs list-disc bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc
                         xl:text-md
                         2xl:text-xl"> <!--https://tailwind-nextjs-starter-blog.vercel.app/blog-->
                             <li>
@@ -265,7 +230,7 @@
                         Deputy Returning Officer, Elections Canada
                         <br>
                         September 2021
-                        <ul class="font-sharetech text-xs list-disc hidden bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc hidden
                         2xl:text-xl 2xl:block">
                             <li>    
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
@@ -291,28 +256,27 @@
                     xl:text-xl xl:max-w-64">
                     <ul class="font-sharetech justify-center text-xs list-disc
                         xl:text-lg">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Learned how to assemble computers and networks, fixed broken computer hardware, helped deploy LAN/WAN networks, and troubleshoot malfunctioning devices.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Education in Programming with Python 3 was obtained through three years of computer science courses and two university classes.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Ability to quickly catch onto new skills due to eagerness and commitment to learning, for example, getting an R Studio Code and Python certification through Ted Rogers Bootcamps.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Excellent teamwork capability, showing initiative in helping co-workers and supervisors during co-op terms.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Specialist High Skills Major in business obtained through multiple years of hard work to fulfil the required qualifications and classes in high school, including coop, business and extracurricular events.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Capability to communicate fluently in Russian and English.
                         </li>
                     </ul>
                 </div>
             </div>
-
             <!--This specifies that the specific div should fill out the entire screen.-->
             <div id="Projects" class="min-w-full">
                 <div>
@@ -320,23 +284,19 @@
                     xl:text-3xl">Projects</h2>
                 </div>
 
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
-                    <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
-                    md:max-w-48
-                    xl:text-xl xl:max-w-64">
-                    <ul class="font-sharetech justify-center text-xs list-disc
-                        md:text-md
-                        xl:text-lg">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 sm:flex-row">
+                    <ul class="font-sharetech justify-center text-sm mx-0
+                    xl:text-md
+                    2xl:text-xl">
+                        <li>    
                             My experience in high school Co-op taught me about support technician work, such as resetting hard drives, upgrading computers and laying out ethernet cables. In university, I took an IT networking course regarding network infrastructure, which taught me about different aspects of LAN/WAN configurations and wireless networks. I have also completed lots of independent research on fixing circuit boards and other microelectronics.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             An example of my past Co-op experience is when I participated in a team of full-time employees to deploy new software to all computers in the organization. It required issue resolution through ServiceNow to ensure any problems people experienced with the newly deployed software could be solved in a timely manner. Additionally, knowledge documentation had to be created in relation to the new software, so other technicians would be able to quickly find solutions to common problems.
                         </li>
                         <li class="text-center hover:relative">
-                            <p class="font-sharetech my-4 text-sm bg-yellow-300 text-black border-black border-4 rounded-lg
-                            xl:text-lg
-                            2xl:text-xl">
+                            <p class="font-sharetech my-4 text-sm
+                            xl:text-xl">
                                 Worked in a Group to Create a Network Diagram for a Office
                             </p>
                             <img class="h-48 w-64 inline hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-0 hover:w-[50%] hover:h-[50%]
@@ -349,14 +309,12 @@
                             2xl:hover:w-[60%] 2xl:hover:h-[200%]" src="Images/Floor 4.png"></img>
                         </li>
                         <li class="text-center hover:relative">
-                            <p class="font-sharetech my-4 text-sm hidden bg-yellow-300 text-black border-black border-4 rounded-lg
-                            xl:text-lg
+                            <p class="font-sharetech my-4 text-sm hidden
                             2xl:text-xl 2xl:block">
                                 Individually Made Archimate Layer Diagrams for the Process of Buying Products
                             </p>
-                            <p class="font-sharetech my-4 text-sm block bg-yellow-300 text-black border-black border-4 rounded-lg
-                            xl:text-lg
-                            2xl:text-xl 2xl:hidden">
+                            <p class="font-sharetech my-4 text-sm block
+                            2xl:text-lg 2xl:hidden">
                                 Additional Example Visible on Larger Screen
                             </p>
                             <img class="h-48 w-64 hover:absolute hover:border-4 hover:border-black hover:object-center hover:inset-x-0 top-0 h-16 hidden
@@ -379,23 +337,23 @@
                 <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
                     <ul class="font-sharetech text-center my-4 text-sm
                         xl:text-4xl">
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/df516b75-5f5c-42f8-b3e8-30ad9fee894c#gs.gtsumm')">SQL 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/df516b75-5f5c-42f8-b3e8-30ad9fee894c#gs.gtsumm">SQL 2.0</a>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/a3de4ebc-c5ac-4cb5-b2a7-bb295d0f4174#gs.gtswde')">Python 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/a3de4ebc-c5ac-4cb5-b2a7-bb295d0f4174#gs.gtswde">Python 2.0</a>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/21ea7562-6d53-4e0b-9816-6c5d459bd28f#gs.gtswq6')">Tableau 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/21ea7562-6d53-4e0b-9816-6c5d459bd28f#gs.gtswq6">Tableau 2.0</a>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/edc40d85-363e-4250-8242-9a8424d7ea8e#gs.gtsx56')">Power BI 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/edc40d85-363e-4250-8242-9a8424d7ea8e#gs.gtsx56">Power BI 2.0</a>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/ab1d9b48-9790-4f5e-a12d-0049941d2d1f#gs.gtsxkm')">Power of Excel Business Fundamentals 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/ab1d9b48-9790-4f5e-a12d-0049941d2d1f#gs.gtsxkm">Power of Excel Business Fundamentals 2.0</a>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
-                            <button onclick="confirmation('https://trsmcredentials.torontomu.ca/e37434fa-776f-4861-9290-ca46b78eb09f#gs.gtsxn1')">R 2.0
+                        <li class="hover:bg-yellow-300">
+                            <a href="https://trsmcredentials.torontomu.ca/e37434fa-776f-4861-9290-ca46b78eb09f#gs.gtsxn1">R 2.0</a>
                         </li>
                     </ul>
                 </div>
@@ -409,49 +367,49 @@
                 </div>
 
                 <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
-                    <ul class="font-sharetech text-left my-4 text-md list-disc
+                    <ul class="font-sharetech text-center my-4 text-md
                         2xl:text-3xl">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Evelina J. Thompson Co-op Excellence Award, TMU
                             <br>
                             2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Deans List, TRSM
                             <br>
                             2022 and 2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Removing Obstacles Creating Capacity Award, WSIB 
                             <br>
                             2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Canadian National Champion 2022 Microsoft Office Specialist, Certiport
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Best-Strategy Invitational Distinguished Participant Certificate, Glo-Bus 
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Top 10% Engaged, TRSM
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Business Leadership: Management Fundamentals Award, Hodan Nalayeh Secondary School 
                             <br>
                             2021
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             International Business Fundamentals Award, Hodan Nalayeh Secondary School
                             <br>
                             2021
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li>
                             Sports and Entertainment Marketing Award, Hodan Nalayeh Secondary School 
                             <br>
                             2021
