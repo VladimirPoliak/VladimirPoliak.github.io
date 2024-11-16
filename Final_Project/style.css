@@ -1,3 +1,4 @@
+/* This code is necessary to get Tailwind to function according to the Tailwind CSS page https://tailwindcss.com/docs/installation*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
