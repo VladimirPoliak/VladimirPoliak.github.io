@@ -18,9 +18,9 @@ function confirmation(link) {
   }
 }
 
-
 /* This function takes the user back to the home function whenever the browser page is reloded for easier navigaiton.
-The tutorial followed to create this function is https://stackoverflow.com/questions/5007530/how-do-i-scroll-to-an-element-using-javascript*/
+The tutorial followed to create this function is https://stackoverflow.com/questions/5007530/how-do-i-scroll-to-an-element-using-javascript
 window.onbeforeunload = function(event) {
   document.getElementById("Home").scrollIntoView();
 }
+*/
