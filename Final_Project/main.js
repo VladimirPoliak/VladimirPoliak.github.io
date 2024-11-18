@@ -10,10 +10,25 @@ function verticalToHorizontal(event) {
 document.scrollingElement.addEventListener('wheel', verticalToHorizontal, {passive: false});
 
 /* This confirmation function prompts the user to confirm they want to leave the website, so they can choose not to if they clicked by mistake.
-The tutorial followed to create this function is //https://developer.mozilla.org/en-US/docs/Web/API/Window/open*/
+The tutorial followed to create this function is https://developer.mozilla.org/en-US/docs/Web/API/Window/open*/
 function confirmation(link) {
   var confirmation = confirm("This Link Goes to An External Website\nPress 'Ok' If You want to Go.");
   if (confirmation == true) {
-    window.open(link, "_blank")
+    window.open(link, "_blank");
   }
 }
+
+
+/* This function takes the user back to the home function whenever the browser page is reloded for easier navigaiton.
+The tutorial followed to create this function is https://stackoverflow.com/questions/5007530/how-do-i-scroll-to-an-element-using-javascript*/
+window.onbeforeunload = function(event) {
+  document.getElementById("Home").scrollIntoView();
+}
+
+/*
+function sitePosition(id) {
+  var viewItem = document.getElementById(id)
+  var viewElement = viewItem.getBoundingClientRect();
+  alert(viewElement)
+}
+*/
