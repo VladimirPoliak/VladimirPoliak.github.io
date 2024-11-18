@@ -342,13 +342,17 @@
                             <p class="font-sharetech my-4 text-sm bg-yellow-300 text-black border-black border-4 rounded-lg
                             xl:text-lg
                             2xl:text-xl">
-                                Worked in a Group to Create a Network Diagram for an Office
+                                Worked in a Group to Create a Network Diagram for an Office (ITM301)
                             </p>
-                            <!-- https://www.material-tailwind.com/docs/html/dialog-->
+                            <!-- This collection of divs, the button and the image make a modal component that can be opened as a popup in the middle of the screen.
+                            The 4 copies of code function identically, but they have different images, the diologue size had to be different to enable functionality.
+                            The tutorial followed to create this function is https://www.material-tailwind.com/docs/html/dialog-->
                             <div class="flex justify-center">
+                                <!-- This creates a button that can be pushed to create a modal dialogue box with an image in it.-->
                                 <button data-dialog-target="dialog-xs" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Floor1.png">
                                 </button>
+                                <!-- This specifies the content to be inside the modal popup image.-->
                                 <div data-dialog-backdrop="dialog-xs" data-dialog-backdrop-close="true"
                                     class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xs">
@@ -356,7 +360,6 @@
                                         src="Images/Floor1.png">
                                     </div>
                                 </div>
-                                
                                 <button data-dialog-target="dialog-sm" class="border-4 border-black :shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Floor2.png">
                                 </button>
@@ -367,7 +370,6 @@
                                         src="Images/Floor2.png">
                                     </div>
                                 </div>
-
                                 <button data-dialog-target="dialog-md" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Floor3.png">
                                 </button>
@@ -378,7 +380,6 @@
                                         src="Images/Floor3.png">
                                     </div>
                                 </div>
-
                                 <button data-dialog-target="dialog-lg" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Floor4.png">
                                 </button>
@@ -395,7 +396,7 @@
                             <p class="font-sharetech my-4 text-sm hidden bg-yellow-300 text-black border-black border-4 rounded-lg
                             xl:text-lg
                             2xl:text-xl 2xl:block">
-                                Individually Made Archimate Layer Diagrams for the Process of Buying Products
+                                Individually Made Archimate Layer Diagrams for the Process of Buying Products (ITM706)
                             </p>
                             <!-- This creates a warning message that is only visible on smaller screens.-->
                             <p class="font-sharetech my-4 text-sm block bg-yellow-300 text-black border-black border-4 rounded-lg
@@ -403,11 +404,15 @@
                             2xl:text-xl 2xl:hidden">
                                 Additional Example Visible on Larger Screen
                             </p>
-                            <!-- THIS NEEDS TO BE FIXED.-->
+                            <!-- This collection of divs, the button and the image make a modal component that can be opened as a popup in the middle of the screen.
+                             The 2 copies of code function identically, but they have different images, the diologue size had to be different to enable functionality.
+                            The tutorial followed to create this function is https://www.material-tailwind.com/docs/html/dialog-->
                             <div class="flex justify-center">
+                                <!-- This creates a button that can be pushed to create a modal dialogue box with an image in it.-->
                                 <button data-dialog-target="dialog-xl" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Business_Layer_Archimate.png">
                                 </button>
+                                <!-- This specifies the content to be inside the modal popup image.-->
                                 <div data-dialog-backdrop="dialog-xl" data-dialog-backdrop-close="true"
                                     class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xl">
@@ -415,7 +420,6 @@
                                         src="Images/Business_Layer_Archimate.png">
                                     </div>
                                 </div>
-                                
                                 <button data-dialog-target="dialog-xxl" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
                                     <img class="h-48 w-64" src="Images/Application_Layer_Archimate.png">
                                 </button>
@@ -427,6 +431,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- This script is necessary below the above modal codes as it does not function if placed anywhere else.-->
                             <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
                         </li>
                     </ul>
@@ -444,6 +449,9 @@
                     <!-- This unordered list specifies all of my micro-credential access buttons in no specific order.-->
                     <ul class="font-sharetech text-center my-4 text-sm
                         xl:text-4xl">
+                        <p class="font-sharetech my-4 bg-yellow-300 text-black border-black border-4 rounded-lg">
+                            Click on Any of The Below Links to Get Details About Each Credential
+                        </p>
                         <!-- Each button executes javascript code to check if the user wants to leave the website before opening a secondary webpage linking to each credential.-->
                         <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/df516b75-5f5c-42f8-b3e8-30ad9fee894c#gs.gtsumm')">SQL 2.0</button>
