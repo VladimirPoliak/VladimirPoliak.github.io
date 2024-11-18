@@ -24,11 +24,3 @@ The tutorial followed to create this function is https://stackoverflow.com/quest
 window.onbeforeunload = function(event) {
   document.getElementById("Home").scrollIntoView();
 }
-
-/*
-function sitePosition(id) {
-  var viewItem = document.getElementById(id)
-  var viewElement = viewItem.getBoundingClientRect();
-  alert(viewElement)
-}
-*/
