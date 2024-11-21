@@ -19,7 +19,7 @@
         <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
     </head>
 
-    <body class="bg-gray-950 text-white">
+    <body class="dark:bg-gray-950 dark:text-white bg-white text-black">
         <!-- This script adds functionality to the drop-down navigation; it had to be placed within the body of the code to function correctly.-->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <!-- This code creates the navigation menu, ensuring it constantly stays at the top of the screen whenever the user scrolls left or right.
@@ -29,48 +29,48 @@
         xl:flow-root">
             <!-- The below is a customized navigation bar drop-down menu created by following the tutorial https://flowbite.com/docs/components/dropdowns/
             , appearing whenever the "Navigation Menu" button is clicked and disappearing whenever the screen is clicked somewhere else.-->
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs border-black border-4
             md:text-sm
-            xl:px-2 xl:text-xl" type="button">Navigation Menu
+            xl:px-2 xl:text-2xl" type="button">Navigation Menu
             </button>
             <div id="dropdown" class="hidden">
-                <ul class="bg-gray-700 rounded-lg" aria-labelledby="dropdownDefaultButton">
+                <ul class="bg-gray-700 rounded-lg border-black border-4" aria-labelledby="dropdownDefaultButton">
                     <!-- Each of these navigation links is positioned within list item elements in the form of a drop-down 
                     and styled to look like pressable buttons, which take you to different locations on the website page.-->
                     <li>
-                        <a href="#Home" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Home" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Home
+                        xl:px-2 xl:text-2xl">Home
                         </a> <!-- This tutorial was followed on how to link to specific webpage locations https://www.scaler.com/topics/how-to-link-to-a-specific-part-of-a-page-html/-->
                     </li>
                     <li>
-                        <a href="#Exprience" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Exprience" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Experience
+                        xl:px-2 xl:text-2xl">Experience
                         </a>
                     </li>
                     <li>
-                        <a href="#Qualifications" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Qualifications" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Qualifications
+                        xl:px-2 xl:text-2xl">Qualifications
                         </a>
                     </li>
                     <li>
-                        <a href="#Projects" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Projects" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Projects
+                        xl:px-2 xl:text-2xl">Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#Credentials" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Credentials" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Credentials
+                        xl:px-2 xl:text-2xl">Credentials
                         </a>
                     </li>
                     <li>
-                        <a href="#Achievements" class="bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
+                        <a href="#Achievements" class="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto text-xs 
                         md:text-sm
-                        xl:px-2 xl:text-xl">Achievements
+                        xl:px-2 xl:text-2xl">Achievements
                         </a>
                     </li>
                 </ul>
@@ -78,26 +78,26 @@
             <!-- The following two buttons are not in the list, so they can be floated on the right side of the screen and constantly visible.-->
             <!-- This button with javascript functionality prompts the user to confirm if they want to leave the website before taking them to LinkedIn.
             It has a built-in picture of the LinkedIn icon to give users more visual feedback when using a 1920 x 1080 screen.-->
-            <button onclick="confirmation('https://linkedin.com/in/vladimir-p-b315331aa/')" class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-right inline-block mx-auto w-40 text-xs 
+            <button onclick="confirmation('https://linkedin.com/in/vladimir-p-b315331aa/')" class="shrink float-right bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-right inline-block mx-auto w-48 text-xs border-black border-4
             md:text-sm
-            xl:px-2 xl:text-xl">
+            xl:px-2 xl:text-2xl">
                 <img alt="The LinkedIn logo, consisting of a blue background with the letters 'I' and 'N' in white." src="Images/Linkeidn.webp" class="h-[15%] w-[15%] hidden w-0
                 2xl:inline-block"> <!-- The source of the LinkedIn image https://www.iconfinder.com/icons/317750/linkedin_icon-->
                 Linkedin
             </button>
             <!-- This button with javascript functionality prompts the user to confirm if they want to leave the website before taking them to a separate page and launching the email application.
             It has a built-in picture of the Gmai; icon to give users more visual feedback when using a 1920 x 1080 screen.-->
-            <button onclick="confirmation('mailto:Vladimir.Poliak@torontomu.ca')" class="shrink float-right bg-yellow-300 hover:bg-blue-600 text-black rounded-full px-4 font-mono text-center inline-block mx-auto w-1/4 text-xs 
+            <button onclick="confirmation('mailto:Vladimir.Poliak@torontomu.ca')" class="shrink float-right bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 font-mono text-center inline-block mx-auto w-1/4 text-xs border-black border-4
             md:text-sm
-            xl:px-2 xl:text-xl">
-                <img alt="The LinkedIn logo, consisting of an envelope with blue, red, yellow and green sides in the color of the Google logo." src="Images/Gmail.png" class="h-[5%] w-[5%] hidden w-0
+            xl:px-2 xl:text-2xl">
+                <img alt="The Gmail logo, consisting of an envelope with blue, red, yellow and green sides in the color of the Google logo." src="Images/Gmail.png" class="h-[5%] w-[5%] hidden w-0
                 2xl:inline-block"> <!-- The source of the Gmail image https://www.flaticon.com/free-icon/gmail_281769-->
                 Vladimir.Poliak@torontomu.ca<!-- Followed the tutorial of allowing the button to launch the user's mail application of choice https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto-->
             </button>
         </nav>
         <!-- This large div captures all of the website's different sections so that I can make them into side-by-side blocks for horizontal scrolling.
         It also sets the website's "home" page to the beginning of the horizontal scroll.-->
-        <div id="Home" class="flex pt-20 text-white
+        <div id="Home" class="flex pt-20
         sm:space-x-24
         md:pt-10
         xl:pt-14">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <!-- This specifies the styling for the subheading and introduction.-->
-                <div class="flex items-center mx-80 rounded-md bg-blue-400 p-3 md:flex-row"> <!-- Styling was inspired from this template https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
+                <div class="flex items-center mx-80 rounded-md bg-blue-900 p-3 md:flex-row text-white border-black border-4"> <!-- Styling was inspired from this template https://www.tailwindawesome.com/resources/astro-boilerplate/demo-->
                     <div>
                         <h2 class="font-sharetech flex justify-center text-xl
                         xl:text-4xl">Introduciton</h2>
@@ -132,10 +132,10 @@
                     </div>
                 </div>
                 <!-- This specifies the styling for the subsequent list of work experience and heading.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 border-black border-4
                 md:flex-row md:mx-40">
                     <div>
-                        <h2 class="font-sharetech text-center my-4 text-sm 
+                        <h2 class="font-sharetech text-center my-4 text-sm text-white
                         xl:text-3xl">Brief Overview of Experience</h2>
                         <!--    This unordered list creates a small horizontal table with previous work experience.-->
                         <ul class="font-sharetech text-center flex justify-center text-xs mx-0 border-t-4 border-black border-t-8
@@ -143,26 +143,26 @@
                         2xl:text-3xl">
                             <p class="border-r-2 border-black text-gray-300
                             xl:border-r-4">
-                                IT Rotational Co-op, Workplace Safety and Insurance Board
+                                IT Technologist, Primary Support Systems
                                 <br>
-                                May 2023 - Present
-                            </p>
-                            <p class="border-r-2 border-black text-gray-300
-                            xl:border-r-4">
-                                Deputy Returning Officer (Computer), Elections Ontario
-                                <br>
-                                June 2022
+                                February 2020 - March 2020
                             </p>
                             <p class="border-r-2 border-black text-gray-300
                             xl:border-r-4">
                                 Deputy Returning Officer, Elections Canada
                                 <br>
                                 September 2021
-                            </p>
-                            <p class=" border-black text-gray-300">
-                                IT Technologist, Primary Support Systems
+                            </p>   
+                            <p class="border-r-2 border-black text-gray-300
+                            xl:border-r-4">
+                                Deputy Returning Officer (Computer), Elections Ontario
                                 <br>
-                                February 2020 - March 2020
+                                June 2022
+                            </p>
+                            <p class="text-gray-300">
+                                IT Rotational Co-op, Workplace Safety and Insurance Board
+                                <br>
+                                May 2023 - Present
                             </p>
                         </ul>
                     </div>
@@ -170,7 +170,7 @@
                 <!-- This code is used to create a bouncing tooltip arrow that warns users that the website is meant to scroll horizontally, in case users are not used to horizontal scrolling.-->
                 <button data-tooltip-target="tooltip-default" type="button" class="flex items-center mt-16 mx-auto"> <!-- This is the tutorial followed for creating tooltips https://flowbite.com/docs/components/tooltips/-->
                     <img class="w-[5%] h-[5%] flex items-center mt-10 mx-auto animate-bounce" src="Images/Arrow_Right.png"> <!-- The source of the arrow image https://pixabay.com/vectors/arrow-right-shape-sign-symbol-25832/-->
-                    <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 transition-opacity rounded-lg bg-yellow-300 text-black rounded-lg">
+                    <div id="tooltip-default" role="tooltip" class=" text-xl z-10 invisible inline-block px-3 py-2 transition-opacity rounded-lg bg-blue-500 text-white rounded-lg border-black border-4">
                         This Website Scrolls to the Right
                         <div class="tooltip-arrow" data-popper-arrow></div>
                     </div>
@@ -181,7 +181,7 @@
             <div id="Exprience" class="min-w-full">
                 <div>
                     <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-4xl">Experience</h2>
+                    xl:text-5xl">Experience</h2>
                     <h6 class="font-sharetech flex justify-center text-xs
                         2xl:text-2xl 2xl:hidden">
                         Additional Points Visible on Larger Screen
@@ -189,7 +189,7 @@
                 </div>
                 <!-- Each of the subsequent 4 divs is relatively identical in nature, used to create 4 boxes of tables with the work experience name on one side
                 and the list of achievements on the other.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row text-white border-black border-4">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
                     md:max-w-48
                     2xl:text-xl 2xl:max-w-64">
@@ -197,7 +197,7 @@
                         <br>
                         May 2023 - Present
                         <!-- This creates an unordered list of achievements.-->
-                        <ul class="font-sharetech text-xs list-disc bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc bg-blue-500 text-white border-black border-4 rounded-lg
                         xl:text-md
                         2xl:text-xl">
                             <li>
@@ -214,7 +214,7 @@
                 </div>
                  <!-- Each of these divs is relatively identical in nature, used to create a table row with a work experience name on one side
                 and the list of achievements on the other.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 text-white border-black border-4
                 md:flex-row">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
                     2xl:text-xl 2xl:max-w-64">
@@ -222,7 +222,7 @@
                         <br>
                         June 2022
                         <!-- This creates an unordered list of achievements, which is only visible on a 1920 x 1080 screen.-->
-                        <ul class="font-sharetech text-xs list-disc hidden bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc hidden bg-blue-500 text-white border-black border-4 rounded-lg
                         2xl:text-xl 2xl:block">
                             <li>
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
@@ -238,14 +238,14 @@
                 </div>
                 <!-- Each of these divs is relatively identical in nature, used to create a table row with a work experience name on one side
                 and the list of achievements on the other.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row text-white border-black border-4">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
                     xl:text-md
                     2xl:text-xl 2xl:max-w-64">
                         IT Technologist, Primary Support Systems (COVID-19 Interrupted)
                         <br>
                         February 2020 - March 2020
-                        <ul class="font-sharetech text-xs list-disc bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc bg-blue-500 text-white border-black border-4 rounded-lg
                         xl:text-md
                         2xl:text-xl"> <!-- Styling was inspired from this template https://tailwind-nextjs-starter-blog.vercel.app/blog-->
                             <li>
@@ -262,14 +262,14 @@
                 </div>
                 <!-- Each of these divs is relatively identical in nature, used to create a table row with a work experience name on one side
                 and the list of achievements on the other.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row text-white border-black border-4">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list max-w-48
                     2xl:text-xl 2xl:max-w-64">
                         Deputy Returning Officer, Elections Canada
                         <br>
                         September 2021
                         <!-- This creates an unordered list of achievements, which is only visible on a 1920 x 1080 screen.-->
-                        <ul class="font-sharetech text-xs list-disc hidden bg-yellow-300 text-black border-black border-4 rounded-lg
+                        <ul class="font-sharetech text-xs list-disc hidden bg-blue-500 text-white border-black border-4 rounded-lg
                         2xl:text-xl 2xl:block">
                             <li>    
                                 Examined IDs of 150+ voters, crosschecking their address and name with the ones registered in the list of electors, demonstrating attention to detail.
@@ -286,32 +286,33 @@
             <div id="Qualifications" class="min-w-full">
                 <div>
                     <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-3xl">Qualifications</h2>
+                    xl:text-5xl">Qualifications</h2>
                 </div>
                 <!-- This is used to specify the style of the background block within which all the information will be held.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row border-black border-4">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
                     md:max-w-48
                     xl:text-xl xl:max-w-64">
                     <!-- This unordered list specifies all of my qualifications in no specific order.-->
                     <ul class="font-sharetech justify-center text-xs list-disc
-                        xl:text-lg">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        xl:text-lg
+                        2xl:text-3xl">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Learned how to assemble computers and networks, fixed broken computer hardware, helped deploy LAN/WAN networks, and troubleshoot malfunctioning devices.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Education in Programming with Python 3 was obtained through three years of computer science courses and two university classes.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Ability to quickly catch onto new skills due to eagerness and commitment to learning, for example, getting an R Studio Code and Python certification through Ted Rogers Bootcamps.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Excellent teamwork capability, showing initiative in helping co-workers and supervisors during co-op terms.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Specialist High Skills Major in business obtained through multiple years of hard work to fulfil the required qualifications and classes in high school, including coop, business and extracurricular events.
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Capability to communicate fluently in Russian and English.
                         </li>
                     </ul>
@@ -322,26 +323,26 @@
             <div id="Projects" class="min-w-full">
                 <div>
                     <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-3xl">Projects</h2>
+                    xl:text-5xl">Projects</h2>
                 </div>
                 <!-- This is used to specify the style of the background block within which all the information will be held.-->
-                <div class="flex items-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex items-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row border-black border-4">
                     <p class="font-sharetech text-center flex justify-center text-sm mx-0 list
                     md:max-w-48
                     xl:text-xl xl:max-w-64">
                     <!-- This unordered list specifies all of my qualifications in no specific order.-->
                     <ul class="font-sharetech justify-center text-xs list-disc
                         md:text-md
-                        xl:text-lg">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        xl:text-2xl">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             My experience in high school Co-op taught me about support technician work, such as resetting hard drives, upgrading computers and laying out ethernet cables. I have also completed lots of independent research on fixing circuit boards and other microelectronics.                        </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             An example of my past Co-op experience is when I participated in a team of full-time employees to deploy new software to all computers in the organization. Additionally, knowledge documentation had to be created in relation to the new software, so other technicians would be able to quickly find solutions to common problems.
                         </li>
                         <li class="text-center hover:relative">
-                            <p class="font-sharetech my-4 text-sm bg-yellow-300 text-black border-black border-4 rounded-lg
+                            <p class="font-sharetech my-4 text-sm bg-blue-500 text-white border-black border-4 rounded-lg
                             xl:text-lg
-                            2xl:text-xl">
+                            2xl:text-3xl">
                                 Worked in a Group to Create a Network Diagram for an Office (ITM301)
                             </p>
                             <!-- This collection of divs, the button and the image make a modal component that can be opened as a popup in the middle of the screen.
@@ -356,7 +357,7 @@
                                 <div data-dialog-backdrop="dialog-xs" data-dialog-backdrop-close="true"
                                     class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xs">
-                                        <img alt="The 1st floor of an office buildding including all the computers of the production departement and the data closet." class="h-full w-full object-cover object-center"
+                                        <img alt="The 1st floor of an office buildding including all the computers of the production departement and the data closet." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Floor1.png">
                                     </div>
                                 </div>
@@ -366,7 +367,7 @@
                                 <div data-dialog-backdrop="dialog-sm" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-sm">
-                                        <img alt="The 2nd floor of an office buildding including all of the departement rooms and a network closet." class="h-full w-full object-cover object-center"
+                                        <img alt="The 2nd floor of an office buildding including all of the departement rooms and a network closet." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Floor2.png">
                                     </div>
                                 </div>
@@ -376,7 +377,7 @@
                                 <div data-dialog-backdrop="dialog-md" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-md">
-                                        <img alt="The 3rd floor of an office buildding including all the management teams offices, a data closet and a conference room." class="h-full w-full object-cover object-center"
+                                        <img alt="The 3rd floor of an office buildding including all the management teams offices, a data closet and a conference room." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Floor3.png">
                                     </div>
                                 </div>
@@ -386,20 +387,20 @@
                                 <div data-dialog-backdrop="dialog-lg" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-lg">
-                                        <img alt="The 4th floor of an office buildding including the data closet, server room and workstations." class="h-full w-full object-cover object-center"
+                                        <img alt="The 4th floor of an office buildding including the data closet, server room and workstations." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Floor4.png">
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="text-center hover:relative">
-                            <p class="font-sharetech my-4 text-sm hidden bg-yellow-300 text-black border-black border-4 rounded-lg
+                            <p class="font-sharetech my-4 text-sm hidden bg-blue-500 text-white border-black border-4 rounded-lg
                             xl:text-lg
-                            2xl:text-xl 2xl:block">
+                            2xl:text-3xl 2xl:block">
                                 Individually Made Archimate Layer Diagrams for the Process of Buying Products (ITM706)
                             </p>
                             <!-- This creates a warning message that is only visible on smaller screens.-->
-                            <p class="font-sharetech my-4 text-sm block bg-yellow-300 text-black border-black border-4 rounded-lg
+                            <p class="font-sharetech my-4 text-sm block bg-blue-500 text-white border-black border-4 rounded-lg
                             xl:text-lg
                             2xl:text-xl 2xl:hidden">
                                 Additional Example Visible on Larger Screen
@@ -416,7 +417,7 @@
                                 <div data-dialog-backdrop="dialog-xl" data-dialog-backdrop-close="true"
                                     class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xl">
-                                        <img alt="An Archi Mate business layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-full w-full object-cover object-center"
+                                        <img alt="An Archi Mate business layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Business_Layer_Archimate.png">
                                     </div>
                                 </div>
@@ -426,7 +427,7 @@
                                 <div data-dialog-backdrop="dialog-xxl" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xxl">
-                                        <img alt="An Archi Mate application layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-full w-full object-cover object-center"
+                                        <img alt="An Archi Mate application layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Application_Layer_Archimate.png">
                                     </div>
                                 </div>
@@ -442,33 +443,33 @@
             <div id="Credentials" class="min-w-full">
                 <div>
                     <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-3xl">Credentials</h2>
+                    xl:text-5xl">Credentials</h2>
                 </div>
                 <!-- This is used to specify the style of the background block within which all the information will be held.-->
-                <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex justify-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row border-black border-4">
                     <!-- This unordered list specifies all of my micro-credential access buttons in no specific order.-->
                     <ul class="font-sharetech text-center my-4 text-sm
                         xl:text-4xl">
-                        <p class="font-sharetech my-4 bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <p class="font-sharetech my-4 bg-blue-500 text-white border-black border-4 rounded-lg">
                             Click on Any of The Below Links to Get Details About Each Credential
                         </p>
                         <!-- Each button executes javascript code to check if the user wants to leave the website before opening a secondary webpage linking to each credential.-->
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/df516b75-5f5c-42f8-b3e8-30ad9fee894c#gs.gtsumm')">SQL 2.0</button>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/a3de4ebc-c5ac-4cb5-b2a7-bb295d0f4174#gs.gtswde')">Python 2.0</button>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/21ea7562-6d53-4e0b-9816-6c5d459bd28f#gs.gtswq6')">Tableau 2.0</button>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/edc40d85-363e-4250-8242-9a8424d7ea8e#gs.gtsx56')">Power BI 2.0</button>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/ab1d9b48-9790-4f5e-a12d-0049941d2d1f#gs.gtsxkm')">Power of Excel Business Fundamentals 2.0</button>
                         </li>
-                        <li class="hover:bg-yellow-300 hover:text-black rounded-lg">
+                        <li class="hover:bg-blue-500 hover:text-black text-white rounded-lg">
                             <button onclick="confirmation('https://trsmcredentials.torontomu.ca/e37434fa-776f-4861-9290-ca46b78eb09f#gs.gtsxn1')">R 2.0</button>
                         </li>
                     </ul>
@@ -479,54 +480,54 @@
             <div id="Achievements" class="min-w-full">
                 <div>
                     <h2 class="font-sharetech flex justify-center text-xl
-                    xl:text-3xl">Achievements</h2>
+                    xl:text-5xl">Achievements</h2>
                 </div>
                 <!-- This is used to specify the style of the background block within which all the information will be held.-->
-                <div class="flex justify-center gap-x-8 rounded-md bg-blue-400 p-3 mx-80 md:flex-row">
+                <div class="flex justify-center gap-x-8 rounded-md bg-blue-900 p-3 mx-80 md:flex-row border-black border-4">
                     <!-- This unordered list specifies all of my personal achievements in no specific order.-->
                     <ul class="font-sharetech text-left my-4 text-md list-disc
                         2xl:text-3xl">
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Evelina J. Thompson Co-op Excellence Award, TMU
                             <br>
                             2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Deans List, TRSM
                             <br>
                             2022 and 2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Removing Obstacles Creating Capacity Award, WSIB 
                             <br>
                             2023
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Canadian National Champion 2022 Microsoft Office Specialist, Certiport
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Best-Strategy Invitational Distinguished Participant Certificate, Glo-Bus 
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Top 10% Engaged, TRSM
                             <br>
                             2022
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Business Leadership: Management Fundamentals Award, Hodan Nalayeh Secondary School 
                             <br>
                             2021
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             International Business Fundamentals Award, Hodan Nalayeh Secondary School
                             <br>
                             2021
                         </li>
-                        <li class="bg-yellow-300 text-black border-black border-4 rounded-lg">
+                        <li class="bg-blue-500 text-white border-black border-4 rounded-lg">
                             Sports and Entertainment Marketing Award, Hodan Nalayeh Secondary School 
                             <br>
                             2021
