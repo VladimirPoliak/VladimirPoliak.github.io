@@ -5,6 +5,7 @@
         <title>
             Vladimir Poliak Personal Portfolio
         </title>
+        <meta charset="UTF-8">
         <!-- This imports the Twilwind CSS CDN so the more complex Tailwind functions work.-->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- This ensures all changes to CSS styling are applied by the Tailwind installation.-->
@@ -169,7 +170,7 @@
                 </div>
                 <!-- This code is used to create a bouncing tooltip arrow that warns users that the website is meant to scroll horizontally, in case users are not used to horizontal scrolling.-->
                 <button data-tooltip-target="tooltip-default" type="button" class="flex items-center mt-16 mx-auto"> <!-- This is the tutorial followed for creating tooltips https://flowbite.com/docs/components/tooltips/-->
-                    <img class="w-[5%] h-[5%] flex items-center mt-10 mx-auto animate-bounce" src="Images/Arrow_Right.png"> <!-- The source of the arrow image https://pixabay.com/vectors/arrow-right-shape-sign-symbol-25832/-->
+                    <img alt="A white rightward facing arrow bouncing up and down." class="w-[5%] h-[5%] flex items-center mt-10 mx-auto animate-bounce" src="Images/Arrow_Right.png"> <!-- The source of the arrow image https://pixabay.com/vectors/arrow-right-shape-sign-symbol-25832/-->
                     <div id="tooltip-default" role="tooltip" class=" text-xl z-10 invisible inline-block px-3 py-2 transition-opacity rounded-lg bg-blue-500 text-white rounded-lg border-black border-4">
                         This Website Scrolls to the Right
                         <div class="tooltip-arrow" data-popper-arrow></div>
@@ -351,7 +352,7 @@
                             <div class="flex justify-center">
                                 <!-- This creates a button that can be pushed to create a modal dialogue box with an image in it.-->
                                 <button data-dialog-target="dialog-xs" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Floor1.png">
+                                    <img alt="The 1st floor of an office buildding including all the computers of the production departement and the data closet." class="h-48 w-64" src="Images/Floor1.png">
                                 </button>
                                 <!-- This specifies the content to be inside the modal popup image.-->
                                 <div data-dialog-backdrop="dialog-xs" data-dialog-backdrop-close="true"
@@ -362,7 +363,7 @@
                                     </div>
                                 </div>
                                 <button data-dialog-target="dialog-sm" class="border-4 border-black :shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Floor2.png">
+                                    <img alt="The 2nd floor of an office buildding including all of the departement rooms and a network closet." class="h-48 w-64" src="Images/Floor2.png">
                                 </button>
                                 <div data-dialog-backdrop="dialog-sm" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
@@ -372,7 +373,7 @@
                                     </div>
                                 </div>
                                 <button data-dialog-target="dialog-md" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Floor3.png">
+                                    <img alt="The 3rd floor of an office buildding including all the management teams offices, a data closet and a conference room." class="h-48 w-64" src="Images/Floor3.png">
                                 </button>
                                 <div data-dialog-backdrop="dialog-md" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
@@ -382,7 +383,7 @@
                                     </div>
                                 </div>
                                 <button data-dialog-target="dialog-lg" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Floor4.png">
+                                    <img alt="The 4th floor of an office buildding including the data closet, server room and workstations." class="h-48 w-64" src="Images/Floor4.png">
                                 </button>
                                 <div data-dialog-backdrop="dialog-lg" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
@@ -411,7 +412,7 @@
                             <div class="flex justify-center">
                                 <!-- This creates a button that can be pushed to create a modal dialogue box with an image in it.-->
                                 <button data-dialog-target="dialog-xl" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Business_Layer_Archimate.png">
+                                    <img alt="An Archi Mate business layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-48 w-64" src="Images/Business_Layer_Archimate.png">
                                 </button>
                                 <!-- This specifies the content to be inside the modal popup image.-->
                                 <div data-dialog-backdrop="dialog-xl" data-dialog-backdrop-close="true"
@@ -422,12 +423,12 @@
                                     </div>
                                 </div>
                                 <button data-dialog-target="dialog-xxl" class="border-4 border-black hover:shadow-lg disabled:pointer-events-none" type="button">
-                                    <img class="h-48 w-64" src="Images/Application_Layer_Archimate.png">
+                                    <img alt="An Archi Mate application layer diagram depicting the active, passive and behavioral components in supporting an item return business process." class="h-48 w-64" src="Images/Application_Layer_Archimate.png">
                                 </button>
                                 <div data-dialog-backdrop="dialog-xxl" data-dialog-backdrop-close="true"
                                 class="pointer-events-none fixed inset-0 grid place-items-center backdrop-blur-sm">
                                     <div data-dialog="dialog-xxl">
-                                        <img alt="An Archi Mate application layer diagram depicting the active, passive and behavioral components in fulfiling an item return business process." class="h-full w-full object-cover object-center border-black border-4"
+                                        <img alt="An Archi Mate application layer diagram depicting the active, passive and behavioral components in supporting an item return business process." class="h-full w-full object-cover object-center border-black border-4"
                                         src="Images/Application_Layer_Archimate.png">
                                     </div>
                                 </div>
