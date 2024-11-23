@@ -1,0 +1,72 @@
+/* Defines the style for the body of the website.*/
+body {
+    font-family: Arial;
+    font-size: 12pt;
+    background-color: #d1d0a9;
+    color: #bf8888;
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+
+/* Defines positioning and style for drop-down menu.*/
+.content {
+    display: none;
+    position: absolute;
+    background-color: #69b6b3;
+}
+
+/* Defines style for the navigation bar items*/
+.helpItem, .menuButton {
+    border:solid; 
+    border-width: thin;
+    background-color: white;
+    font-size: 25px;
+}
+
+/* Makes dropdown menu visible.*/
+.show {
+    display: block;
+}
+
+/* Used to align the accessibility menu in a table.*/
+.Row {
+    display: table-row;
+}
+
+/* Defines the style of the accessibility menu buttons.*/
+.Table {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* Defines the style of the video and music player.*/
+.multimedia {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* Defines style for the pictures. */
+.pictures {
+    width: 504px; /* 504px */
+    height: 378px; /* 378px */
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Defines the layout of the picture elements.*/
+.images {
+    display: flex;
+    text-align: center;
+}
+
+/* Hides the alt text when it does not need to be seen.*/
+#altImg1, #altImg2, #altImg3 {
+    display: none;
+}

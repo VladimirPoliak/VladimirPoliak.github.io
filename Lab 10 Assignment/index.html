@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ITM 780 Lab 10</title>
+        <!-- This assigns the style.css sheet and main.js program file to this HTML website.-->
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <nav>
+        <!-- These nav and div tags are used to create an "Accessibility Menu" with 4 elements in the shape of a table. 
+         To enable the accessibility features, the buttons on the left side are pushed; to turn them off, the buttons on the right side are pushed.
+         After clicking anywhere else on the screen, the "Accessibility Menu" closes.-->
+            <button class="menuButton" onclick="dropDownFunciton()">Accessibility Menu</button>
+            <div id="menu" class="content">
+                <div class="Row">
+                    <div class="Table">
+                        <button class="helpItem" onclick="enlarge()">
+                            Text Enlarge Button
+                        </button>
+                    </div>
+                    <div class="Table">
+                        <button class="helpItem" onclick="ensmall()">
+                            Normal Text Button
+                        </button>
+                    </div>
+                </div>
+                <div class="Row">
+                    <div class="Table">
+                        <button class="helpItem" onclick="maxContrast()">
+                            Contrast Button
+                        </button>
+                    </div>
+                    <div class="Table">
+                        <button class="helpItem" onclick="normalContrast()">
+                            Normal Contrast Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-brands fa-instagram">Test</i> <!--https://fontawesome.com/icons/instagram?f=brands&s=solid-->
+        </nav>
+        <hr>
+        <h1>ITM 780 Lab 10 SEO Assignment</h1>
+        <hr>
+        <h2 class="multimedia">SEO and SMO Techniques</h2>
+        <hr>
+        
+        <hr>
+        <h2>Educational Experience</h2>
+        <!-- This creates an unordered list of educational experiences.-->
+        <ul>
+            <li>
+                Bachelor of Commerce - Business Technology Management Co-op, Toronto Metropolitan University (Formerly Ryerson University)
+                <br> 
+                2021 - Preset
+            </li>
+            <li>
+                Specialist High Skills Major in Business - Hodan Nalayeh Secondary School (Formerly Vaughan Secondary)
+                <br> 
+                2017 - 2021
+            </li>
+        </ul>
+        <hr>
+        <h2>Program Description</h2>
+        <!-- This creates a paragraph with a link at the end of it that is on the right side of the screen.-->
+        <p>
+            The Business Technology management program focuses on preparing students to identify business needs, design technological solutions and communicate them effectively. (TorontoMU, n.d.)
+            <br>
+            <br>
+            <a href=https://www.torontomu.ca/programs/undergraduate/business-technology-management>Link to BTM Wesbsite</a>
+        </p>
+        <hr>
+        <h3>Most Useful Course</h3>
+        <!-- This creates a paragraph with a link in the middle of it.-->
+        <p>
+            Despite it being difficult to choose a course which is most useful, I think the one that will benefit me the most for my desired future career path is
+            <a href="https://www.torontomu.ca/information-technology-management/course-outlines/ITM301.pdf">ITM 301</a>.
+            <br>
+            Despite being a difficult course with a lot of technical material, it will be useful for me in the future as I want to pursue a career in IT.
+            <br>
+            I have already used some troubleshooting knowledge from the course to solve some technical issues end users were experiencing while I was on my work term.
+        </p>
+        <div class="images">
+            <div>
+                <!-- This code shows a picture with alt text that a screen reader can read.
+                 Additionally, below the picture is a caption with the time and location it was taken.-->
+                <img class="pictures" src="images/Dam.png" alt="Downward view at the Colorado River from the top of the Hoover Dam.
+                On either side, there are slightly orange-coloured cliffs with some electrical pylons on them, with the off-white dam and its turbine buildings visible in the foreground.
+                To the right is the visitor center, which is in the shape of a cylinder like a silo, and in the middle of the image is the Mike O'Callaghan-Pat Tillman Memorial Bridge.
+                The sun shines brightly, and the sky is very light blue with no clouds; the mountains in the background are barren orange rock.">
+                <figcaption>Taken May 27, 2022, at 12 PM, on Hoover Dam Access Rd</figcaption>
+                <!-- This alt text is not visible by default without the buttons below being pressed.-->
+                <p id="altImg3">
+                    Downward view at the Colorado River from the top of the Hoover Dam.
+                    <br>
+                    On either side, there are slightly orange-coloured cliffs with some electrical pylons on them, with the off-white dam and its turbine buildings visible in the foreground.
+                    <br>
+                    To the right is the visitor center, which is in the shape of a cylinder like a silo, and in the middle of the image is the Mike O'Callaghan-Pat Tillman Memorial Bridge.
+                    <br>
+                    The sun shines brightly, and the sky is very light blue with no clouds; the mountains in the background are barren orange rock.
+                </p>
+                <!-- These buttons are used to show and alt text and hide the alt text by running the associated "altDiplay" function to show
+                 the alt text and the "altHide" function to hide the alt text.-->
+                <button class="helpItem" onclick="altDisplay('altImg3')">
+                    Display Alt Text
+                </button>
+                <button class="helpItem" onclick="altHide('altImg3')">
+                    Hide Alt Text
+                </button>
+            </div>
+            <div>
+                <!-- This code shows a picture with alt text that a screen reader can read.
+                 Additionally, below the picture is a caption with the time and location it was taken.-->
+                <img class="pictures" src="images/Montreal.png" alt="Upward view towards the Notre-Dame Basilica of Montreal cathedral with its two gothic towers, the right tower has scaffolding around it, visible against the grey, cloudy sky.
+                The ground is reflective due to the rain, and in the foreground, there is a metal patio fence with two red rain umbrellas above the dining chairs with two cars parked in front of it.
+                Above the umbrellas, two trees are visible, with one partially covering the cathedral.
+                To the left is the slightly yellow Leger building rising into the sky in the style of old French architecture, and to the left is Abeille Immigration building in a modern black glass office design.">
+                <figcaption>Taken Aug 21, 2022, at 4 PM, on Rue Saint-Jaques and St Sulpice St</figcaption>
+                <!-- This alt text is not visible by default without the buttons below being pressed.-->
+                <p id="altImg2">
+                    Upward view towards the Notre-Dame Basilica of Montreal cathedral with its two gothic towers, the right tower has scaffolding around it, visible against the grey, cloudy sky. 
+                    <br>
+                    The ground is reflective due to the rain, and in the foreground, there is a metal patio fence with two red rain umbrellas above the dining chairs with two cars parked in front of it.
+                    <br>
+                    Above the umbrellas, two trees are visible, with one partially covering the cathedral.
+                    <br>
+                    To the left is the slightly yellow Leger building rising into the sky in the style of old French architecture, and to the left is Abeille Immigration building in a modern black glass office design.
+                </p>
+                <!-- These buttons are used to show and alt text and hide the alt text by running the associated "altDiplay" function to show
+                 the alt text and the "altHide" function to hide the alt text.-->
+                <button class="helpItem" onclick="altDisplay('altImg2')">
+                    Display Alt Text
+                </button>
+                <button class="helpItem" onclick="altHide('altImg2')">
+                    Hide Alt Text
+                </button>
+            </div>
+            <div>
+                <!-- This code shows a picture with alt text that a screen reader can read.
+                 Additionally, below the picture is a caption with the time and location it was taken.-->
+                <img class="pictures" src="images/CN-Tower.png" alt="Upward view toward the CN Tower from a street that is near its base at night.
+                To the left is the Rogers Stadium, and the rest of the city is in the background.
+                Two streetlights cast a halo in the foreground, with traffic only going to the left.
+                The CN Twoer is light up with a blue strip of lighting going up the side and slightly pink lighting around the base of the observation area and antenna.">
+                <figcaption>Taken June 28, 2024, at 11 PM, on Bremner Blvd and Rees St</figcaption>
+                <!-- This alt text is not visible by default without the buttons below being pressed.-->
+                <p id="altImg1">
+                    Upward view toward the CN Tower from a street that is near its base at night.
+                    <br>
+                    To the left is the Rogers Stadium, and the rest of the city is in the background.
+                    <br>
+                    Two streetlights cast a halo in the foreground, with traffic only going to the left.
+                    <br>
+                    The CN Twoer is light up with a blue strip of lighting going up the side and slightly pink lighting around the base of the observation area and antenna.
+                </p>
+                <!-- These buttons are used to show and alt text and hide the alt text by running the associated "altDiplay" function to show
+                 the alt text and the "altHide" function to hide the alt text.-->
+                <button class="helpItem" onclick="altDisplay('altImg1')">
+                    Display Alt Text
+                </button>
+                <button class="helpItem" onclick="altHide('altImg1')">
+                    Hide Alt Text
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
