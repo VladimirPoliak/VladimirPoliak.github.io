@@ -105,7 +105,7 @@ function altHide (id) {
 /* This confirmation function prompts the user to confirm they want to leave the website, so they can choose not to if they clicked by mistake.
 The tutorial followed to create this function is https://developer.mozilla.org/en-US/docs/Web/API/Window/open*/
 function confirmation(link) {
-    var confirmation = confirm("This Link Goes to An External Website\nPress 'Ok' If You want to Go.");
+    var confirmation = confirm("This Button Goes to An External Website\nPress 'Ok' If You want to Go.");
     if (confirmation == true) {
       window.open(link, "_blank");
     }
