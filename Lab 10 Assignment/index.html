@@ -6,11 +6,13 @@
         <!-- This assigns the style.css sheet and main.js program file to this HTML website.-->
         <link rel="stylesheet" href="style.css">
         <script src="main.js"></script>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!-- This allows Font Awesome icons to work using the tutorial form https://www.w3schools.com/icons/fontawesome_icons_intro.asp-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="utf-8">
     </head>
 
     <body>
+        <button  onclick="dropDownFunciton()">Accessibility Menu</button>
         <nav>
         <!-- These nav and div tags are used to create an "Accessibility Menu" with 4 elements in the shape of a table. 
          To enable the accessibility features, the buttons on the left side are pushed; to turn them off, the buttons on the right side are pushed.
@@ -42,7 +44,9 @@
                     </div>
                 </div>
             </div>
-            <i class="fa-brands fa-instagram">Test</i> <!--https://fontawesome.com/icons/instagram?f=brands&s=solid-->
+            <button type="button" onclick="" class="helpItem">Button
+                <i class="fa fa-instagram"></i><!--https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-instagram-->
+            </button>
         </nav>
         <hr>
         <h1>ITM 780 Lab 10 SEO Assignment</h1>

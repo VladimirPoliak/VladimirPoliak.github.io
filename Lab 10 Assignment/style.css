@@ -17,9 +17,6 @@ body {
 
 /* Defines style for the navigation bar items*/
 .helpItem, .menuButton {
-    border:solid; 
-    border-width: thin;
-    background-color: white;
     font-size: 25px;
 }
 
